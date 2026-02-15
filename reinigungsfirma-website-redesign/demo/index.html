@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanPro Reinigung | Professionelle Gebäudereinigung</title>
+    <meta name="description" content="Moderne, zuverlässige Reinigung für Büro, Praxis und Privat. Schnelle Angebotserstellung, transparente Leistungen, starke Ergebnisse.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://eazybusiness.github.io/reiningungsfirma/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CleanPro Reinigung | Professionelle Gebäudereinigung">
+    <meta property="og:description" content="Moderne, zuverlässige Reinigung für Büro, Praxis und Privat. Schnelle Angebotserstellung, transparente Leistungen, starke Ergebnisse.">
+    <meta property="og:url" content="https://eazybusiness.github.io/reiningungsfirma/">
+
+    <meta name="theme-color" content="#0B1020">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: [
+                            'ui-sans-serif',
+                            'system-ui',
+                            '-apple-system',
+                            'Segoe UI',
+                            'Roboto',
+                            'Helvetica Neue',
+                            'Arial',
+                            'Noto Sans',
+                            'Liberation Sans',
+                            'sans-serif'
+                        ]
+                    },
+                    colors: {
+                        ink: {
+                            950: '#070A14',
+                            900: '#0B1020',
+                            800: '#111A33',
+                            700: '#1B2850'
+                        },
+                        brand: {
+                            50: '#EEFBFF',
+                            100: '#D7F4FF',
+                            200: '#ADE7FF',
+                            300: '#74D7FF',
+                            400: '#36C6FF',
+                            500: '#00B2FF',
+                            600: '#008DE0',
+                            700: '#006EB3'
+                        }
+                    },
+                    boxShadow: {
+                        glow: '0 0 0 1px rgba(54,198,255,0.20), 0 20px 60px rgba(0,0,0,0.35)'
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root { color-scheme: light; }
+        body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif; }
+        .noise {
+            background-image:
+                radial-gradient(circle at 20% 10%, rgba(54,198,255,0.20), transparent 35%),
+                radial-gradient(circle at 70% 20%, rgba(0,178,255,0.16), transparent 40%),
+                radial-gradient(circle at 30% 80%, rgba(0,141,224,0.10), transparent 45%),
+                linear-gradient(180deg, rgba(7,10,20,1) 0%, rgba(11,16,32,1) 45%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 100%);
+        }
+        .glass {
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+        .ring-soft {
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.14) inset;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(14px);
+            transition: opacity 700ms ease, transform 700ms ease;
+        }
+        .reveal.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { transition: none; transform: none; opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-ink-900">Zum Inhalt springen</a>
+
+    <header class="sticky top-0 z-40 border-b border-white/10 bg-ink-900/70 text-white glass">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="#home" class="flex items-center gap-3">
+                    <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500/20 ring-soft">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M7 12l3 3 7-9" stroke="#74D7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#36C6FF" stroke-width="2" opacity="0.8"/>
+                        </svg>
+                    </span>
+                    <div class="leading-tight">
+                        <div class="text-sm font-semibold tracking-tight">CleanPro Reinigung</div>
+                        <div class="text-xs text-white/70">Gebäudereinigung • Büro • Praxis</div>
+                    </div>
+                </a>
+
+                <nav class="hidden items-center gap-6 md:flex" aria-label="Hauptnavigation">
+                    <a class="text-sm text-white/80 hover:text-white" href="#services">Leistungen</a>
+                    <a class="text-sm text-white/80 hover:text-white" href="#process">Ablauf</a>
+                    <a class="text-sm text-white/80 hover:text-white" href="#trust">Qualität</a>
+                    <a class="text-sm text-white/80 hover:text-white" href="#faq">FAQ</a>
+                    <a class="text-sm text-white/80 hover:text-white" href="#contact">Kontakt</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="#contact" class="hidden rounded-xl bg-white px-4 py-2 text-sm font-semibold text-ink-900 shadow-glow transition hover:opacity-95 md:inline-flex">Angebot anfordern</a>
+                    <button class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-soft md:hidden" type="button" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M4 7h16M4 12h16M4 17h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="hidden border-t border-white/10 pb-4 pt-4 md:hidden">
+                <div class="grid gap-2">
+                    <a class="rounded-lg px-3 py-2 text-sm text-white/85 hover:bg-white/10" href="#services">Leistungen</a>
+                    <a class="rounded-lg px-3 py-2 text-sm text-white/85 hover:bg-white/10" href="#process">Ablauf</a>
+                    <a class="rounded-lg px-3 py-2 text-sm text-white/85 hover:bg-white/10" href="#trust">Qualität</a>
+                    <a class="rounded-lg px-3 py-2 text-sm text-white/85 hover:bg-white/10" href="#faq">FAQ</a>
+                    <a class="rounded-lg px-3 py-2 text-sm text-white/85 hover:bg-white/10" href="#contact">Kontakt</a>
+                    <a class="mt-2 inline-flex justify-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-ink-900" href="#contact">Angebot anfordern</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="home" class="noise text-white">
+            <div class="mx-auto max-w-6xl px-4 pb-16 pt-16 md:pb-24 md:pt-24">
+                <div class="grid items-center gap-10 md:grid-cols-2">
+                    <div class="reveal">
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-white/80 ring-soft">
+                            <span class="inline-block h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                            <span>Modern • Zuverlässig • Messbar sauber</span>
+                        </div>
+                        <h1 class="mt-5 text-4xl font-semibold tracking-tight md:text-5xl">
+                            Professionelle Gebäudereinigung,
+                            <span class="text-brand-300">die Vertrauen schafft</span>
+                        </h1>
+                        <p class="mt-4 text-base text-white/80 md:text-lg">
+                            Für Büros, Praxen und Privathaushalte. Klarer Ablauf, schnelle Angebotserstellung und ein Ergebnis, das man sieht.
+                        </p>
+
+                        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                            <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-ink-900 shadow-glow transition hover:opacity-95">
+                                Angebot anfordern
+                            </a>
+                            <a href="#services" class="inline-flex items-center justify-center rounded-xl bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-soft transition hover:bg-white/15">
+                                Leistungen ansehen
+                            </a>
+                        </div>
+
+                        <div class="mt-10 grid grid-cols-3 gap-4">
+                            <div class="rounded-2xl bg-white/10 p-4 ring-soft">
+                                <div class="text-2xl font-semibold">24h</div>
+                                <div class="mt-1 text-xs text-white/70">Antwortzeit (Demo)</div>
+                            </div>
+                            <div class="rounded-2xl bg-white/10 p-4 ring-soft">
+                                <div class="text-2xl font-semibold">4.9★</div>
+                                <div class="mt-1 text-xs text-white/70">Kundenzufriedenheit</div>
+                            </div>
+                            <div class="rounded-2xl bg-white/10 p-4 ring-soft">
+                                <div class="text-2xl font-semibold">100%</div>
+                                <div class="mt-1 text-xs text-white/70">Abnahme-Checkliste</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal">
+                        <div class="relative overflow-hidden rounded-3xl bg-white/10 p-6 ring-soft">
+                            <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-brand-500/25 blur-3xl"></div>
+                            <div class="relative">
+                                <div class="flex items-center justify-between">
+                                    <div class="text-sm font-semibold">Schnell-Angebot</div>
+                                    <div class="text-xs text-white/70">in 60 Sekunden</div>
+                                </div>
+                                <div class="mt-5 grid gap-3">
+                                    <label class="block">
+                                        <span class="text-xs text-white/70">Leistungsbereich</span>
+                                        <select id="quickService" class="mt-1 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white outline-none focus:border-brand-400">
+                                            <option value="Büroreinigung">Büroreinigung</option>
+                                            <option value="Praxisreinigung">Praxisreinigung</option>
+                                            <option value="Privatreinigung">Privatreinigung</option>
+                                            <option value="Fensterreinigung">Fensterreinigung</option>
+                                            <option value="Grundreinigung">Grundreinigung</option>
+                                            <option value="Baureinigung">Baureinigung</option>
+                                        </select>
+                                    </label>
+                                    <label class="block">
+                                        <span class="text-xs text-white/70">PLZ</span>
+                                        <input id="quickZip" inputmode="numeric" placeholder="z. B. 10115" class="mt-1 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-brand-400" />
+                                    </label>
+                                    <label class="block">
+                                        <span class="text-xs text-white/70">E-Mail</span>
+                                        <input id="quickEmail" type="email" placeholder="name@firma.de" class="mt-1 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-brand-400" />
+                                    </label>
+                                    <button id="quickCta" class="mt-2 inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-ink-900 shadow-glow transition hover:opacity-95" type="button">
+                                        Anfrage vorbereiten
+                                    </button>
+                                    <p class="text-xs text-white/70">
+                                        Hinweis: Demo-Formular. Im Live-Projekt: PHP-Formular auf IONOS inkl. Spam-Schutz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-20">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+                    <div class="reveal">
+                        <h2 class="text-3xl font-semibold tracking-tight md:text-4xl">Leistungen</h2>
+                        <p class="mt-2 max-w-2xl text-gray-600">
+                            Finde schnell die passende Leistung. Die Suche filtert live nach Begriffen wie „Fenster“, „Praxis“ oder „Bau“.
+                        </p>
+                    </div>
+
+                    <div class="reveal w-full md:w-80">
+                        <label class="block">
+                            <span class="text-sm font-medium">Leistung suchen</span>
+                            <div class="mt-2 flex items-center gap-2 rounded-2xl border border-gray-200 bg-white px-4 py-3 shadow-sm">
+                                <svg class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M16.3 16.3L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <input id="serviceSearch" class="w-full text-sm outline-none" placeholder="z. B. Büro, Fenster, Praxis" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mt-10 grid gap-6 md:grid-cols-3" id="servicesGrid">
+                    <article class="service-card reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm" data-tags="büro office unternehmen verträge regelmäßigkeit">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold">Büroreinigung</h3>
+                                <p class="mt-2 text-sm text-gray-600">Regelmäßige Reinigung für konzentriertes Arbeiten – planbar, diskret, dokumentiert.</p>
+                            </div>
+                            <span class="rounded-2xl bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">B2B</span>
+                        </div>
+                        <ul class="mt-5 grid gap-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Reinigung nach Checkliste</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Flexible Frequenzen</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Auf Wunsch Nachweis/Protokoll</li>
+                        </ul>
+                        <a href="#contact" class="mt-6 inline-flex text-sm font-semibold text-ink-900 hover:text-brand-700">Anfragen →</a>
+                    </article>
+
+                    <article class="service-card reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm" data-tags="praxis arzt hygiene medizin steril">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold">Praxisreinigung</h3>
+                                <p class="mt-2 text-sm text-gray-600">Hygiene-orientiert und zuverlässig – für Patientenvertrauen und sichere Abläufe.</p>
+                            </div>
+                            <span class="rounded-2xl bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">Hygiene</span>
+                        </div>
+                        <ul class="mt-5 grid gap-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Schwerpunkt Kontaktflächen</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Planung außerhalb Öffnungszeiten</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Qualitätskontrolle</li>
+                        </ul>
+                        <a href="#contact" class="mt-6 inline-flex text-sm font-semibold text-ink-900 hover:text-brand-700">Anfragen →</a>
+                    </article>
+
+                    <article class="service-card reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm" data-tags="privat haushalt wohnung haus">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold">Privatreinigung</h3>
+                                <p class="mt-2 text-sm text-gray-600">Zuverlässige Hilfe im Alltag – individuell, pünktlich und mit klarer Kommunikation.</p>
+                            </div>
+                            <span class="rounded-2xl bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">Privat</span>
+                        </div>
+                        <ul class="mt-5 grid gap-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Individuelle Schwerpunkte</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Planbare Termine</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Transparente Leistung</li>
+                        </ul>
+                        <a href="#contact" class="mt-6 inline-flex text-sm font-semibold text-ink-900 hover:text-brand-700">Anfragen →</a>
+                    </article>
+
+                    <article class="service-card reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm" data-tags="fenster glas rahmen wintergarten">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold">Fensterreinigung</h3>
+                                <p class="mt-2 text-sm text-gray-600">Streifenfrei, gründlich, sichtbar besser – für Glasflächen, Rahmen und Falze.</p>
+                            </div>
+                            <span class="rounded-2xl bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">Glas</span>
+                        </div>
+                        <ul class="mt-5 grid gap-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Innen & außen</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Auch Wintergärten</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Termintreu</li>
+                        </ul>
+                        <a href="#contact" class="mt-6 inline-flex text-sm font-semibold text-ink-900 hover:text-brand-700">Anfragen →</a>
+                    </article>
+
+                    <article class="service-card reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm" data-tags="grundreinigung intensiv küche bad boden">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold">Grundreinigung</h3>
+                                <p class="mt-2 text-sm text-gray-600">Wenn es richtig sauber sein soll: intensiv, detailverliebt, mit klarer Abnahme.</p>
+                            </div>
+                            <span class="rounded-2xl bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">Intensiv</span>
+                        </div>
+                        <ul class="mt-5 grid gap-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Fokus auf Details</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Abnahme-Checkliste</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Ideal vor Einzug/Übergabe</li>
+                        </ul>
+                        <a href="#contact" class="mt-6 inline-flex text-sm font-semibold text-ink-900 hover:text-brand-700">Anfragen →</a>
+                    </article>
+
+                    <article class="service-card reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm" data-tags="bau baureinigung renovierung staub grob fein">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold">Baureinigung</h3>
+                                <p class="mt-2 text-sm text-gray-600">Von grob bis fein: Baustellen sauber übergeben, ohne Stress und Nacharbeit.</p>
+                            </div>
+                            <span class="rounded-2xl bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">Bau</span>
+                        </div>
+                        <ul class="mt-5 grid gap-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Grob- & Feinreinigung</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Terminkritische Projekte</li>
+                            <li class="flex gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-brand-500"></span>Abnahme-ready</li>
+                        </ul>
+                        <a href="#contact" class="mt-6 inline-flex text-sm font-semibold text-ink-900 hover:text-brand-700">Anfragen →</a>
+                    </article>
+                </div>
+
+                <div id="noServices" class="mt-10 hidden rounded-3xl border border-dashed border-gray-300 bg-gray-50 p-8 text-center text-gray-600">
+                    Keine Treffer. Versuche z. B. „Praxis“, „Fenster“ oder „Bau“.
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="py-16 md:py-20">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="reveal">
+                    <h2 class="text-3xl font-semibold tracking-tight md:text-4xl">So läuft’s ab</h2>
+                    <p class="mt-2 max-w-2xl text-gray-600">Genau wie im Kundenbrief: Kick-off, Design, Iteration, Umsetzung, Abschluss-Check.</p>
+                </div>
+
+                <div class="mt-10 grid gap-6 md:grid-cols-5">
+                    <div class="reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:col-span-2">
+                        <div class="text-xs font-semibold text-brand-700">1</div>
+                        <h3 class="mt-2 text-lg font-semibold">Kick-off</h3>
+                        <p class="mt-2 text-sm text-gray-600">Ziele, Stilreferenzen, Zugänge und vorhandene Inhalte werden abgestimmt.</p>
+                    </div>
+                    <div class="reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:col-span-3">
+                        <div class="text-xs font-semibold text-brand-700">2</div>
+                        <h3 class="mt-2 text-lg font-semibold">Design-Entwurf</h3>
+                        <p class="mt-2 text-sm text-gray-600">Layout, Farben, Typografie – basierend auf deinem bestehenden Inhalt, aber visuell „next level“.</p>
+                    </div>
+                    <div class="reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:col-span-3">
+                        <div class="text-xs font-semibold text-brand-700">3</div>
+                        <h3 class="mt-2 text-lg font-semibold">Iteration</h3>
+                        <p class="mt-2 text-sm text-gray-600">Feedback-Schleifen, bis das neue Layout sitzt. Fokus: Klarheit, Vertrauen, Conversion.</p>
+                    </div>
+                    <div class="reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:col-span-2">
+                        <div class="text-xs font-semibold text-brand-700">4</div>
+                        <h3 class="mt-2 text-lg font-semibold">Umsetzung & Testing</h3>
+                        <p class="mt-2 text-sm text-gray-600">Desktop/Mobile Tests, Form-UX, Navigation, Performance-Checks.</p>
+                    </div>
+                    <div class="reveal rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:col-span-5">
+                        <div class="text-xs font-semibold text-brand-700">5</div>
+                        <h3 class="mt-2 text-lg font-semibold">SEO + Performance Abschluss</h3>
+                        <p class="mt-2 text-sm text-gray-600">On-Page SEO Checkliste + technischer Feinschliff (URLs, Sitemap/Robots, Core Web Vitals).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trust" class="py-16 md:py-20">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="grid gap-8 md:grid-cols-2">
+                    <div class="reveal">
+                        <h2 class="text-3xl font-semibold tracking-tight md:text-4xl">Qualität, die man merkt</h2>
+                        <p class="mt-2 text-gray-600">
+                            Saubere Kommunikation und saubere Ergebnisse. Für die Demo verwenden wir Platzhalterzahlen – im Live-Projekt werden echte Referenzen und Inhalte eingebaut.
+                        </p>
+                        <div class="mt-8 grid gap-4">
+                            <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <div class="text-sm font-semibold">Transparente Leistung</div>
+                                <div class="mt-2 text-sm text-gray-600">Checklisten, klare Verantwortlichkeiten und nachvollziehbare Abläufe.</div>
+                            </div>
+                            <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <div class="text-sm font-semibold">Schnelle Reaktionszeiten</div>
+                                <div class="mt-2 text-sm text-gray-600">Anfragen werden priorisiert beantwortet – besonders bei laufenden Objekten.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal rounded-3xl bg-ink-900 p-8 text-white shadow-glow">
+                        <div class="text-sm font-semibold">Kundenstimme (Demo)</div>
+                        <p class="mt-4 text-lg text-white/85">
+                            „Seit dem Wechsel zu CleanPro wirkt unser Büro jeden Morgen wie frisch eröffnet. Kommunikation top, Ergebnis konstant – genau so muss es sein.“
+                        </p>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div>
+                                <div class="text-sm font-semibold">Office Managerin</div>
+                                <div class="text-xs text-white/70">Büro • Berlin</div>
+                            </div>
+                            <div class="text-sm text-white/80">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 md:py-20">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="reveal">
+                    <h2 class="text-3xl font-semibold tracking-tight md:text-4xl">FAQ</h2>
+                    <p class="mt-2 max-w-2xl text-gray-600">Kurze Antworten auf die häufigsten Fragen – ideal für Conversion und Support.</p>
+                </div>
+                <div class="mt-10 grid gap-4 md:grid-cols-2">
+                    <details class="reveal group rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                        <summary class="cursor-pointer list-none text-sm font-semibold">Wie schnell bekomme ich ein Angebot?</summary>
+                        <p class="mt-3 text-sm text-gray-600">In der Regel nach kurzer Klärung der Eckdaten. In der Demo zeigen wir einen „Quick-Angebot“-Flow.</p>
+                    </details>
+                    <details class="reveal group rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                        <summary class="cursor-pointer list-none text-sm font-semibold">Welche Leistungen sind enthalten?</summary>
+                        <p class="mt-3 text-sm text-gray-600">Büro-, Praxis-, Privat-, Fenster-, Grund- und Baureinigung. Im Live-Projekt wird die Liste exakt an dein Angebot angepasst.</p>
+                    </details>
+                    <details class="reveal group rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                        <summary class="cursor-pointer list-none text-sm font-semibold">Gibt es eine Suchfunktion?</summary>
+                        <p class="mt-3 text-sm text-gray-600">Ja – die Leistungen lassen sich live filtern. So finden Nutzer schneller das richtige Angebot.</p>
+                    </details>
+                    <details class="reveal group rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                        <summary class="cursor-pointer list-none text-sm font-semibold">Wie wird das Kontaktformular umgesetzt?</summary>
+                        <p class="mt-3 text-sm text-gray-600">In der Demo clientseitig. Im Live-Projekt: PHP-Formular auf IONOS, inkl. Validierung und Spam-Schutz.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-20">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="grid gap-10 md:grid-cols-2">
+                    <div class="reveal">
+                        <h2 class="text-3xl font-semibold tracking-tight md:text-4xl">Kontakt</h2>
+                        <p class="mt-2 text-gray-600">Schick uns kurz die Eckdaten – wir melden uns mit einem passenden Vorschlag zurück.</p>
+
+                        <div class="mt-8 grid gap-4">
+                            <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <div class="text-sm font-semibold">Telefon</div>
+                                <div class="mt-2 text-sm text-gray-600">+49 123 456 7890</div>
+                            </div>
+                            <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <div class="text-sm font-semibold">E-Mail</div>
+                                <div class="mt-2 text-sm text-gray-600">info@cleanpro.de</div>
+                            </div>
+                            <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <div class="text-sm font-semibold">Adresse</div>
+                                <div class="mt-2 text-sm text-gray-600">Musterstraße 123, 12345 Berlin</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                        <h3 class="text-lg font-semibold">Anfrage senden</h3>
+                        <p class="mt-2 text-sm text-gray-600">Alle Felder helfen uns, schneller zu antworten. (Demo-Validierung inklusive)</p>
+
+                        <form id="contactForm" class="mt-6 grid gap-4" novalidate>
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <label class="block">
+                                    <span class="text-sm font-medium">Name</span>
+                                    <input name="name" class="mt-2 w-full rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-500" placeholder="Vor- und Nachname" required />
+                                    <span class="mt-2 hidden text-xs text-red-600" data-error-for="name">Bitte Name eingeben.</span>
+                                </label>
+                                <label class="block">
+                                    <span class="text-sm font-medium">E-Mail</span>
+                                    <input name="email" type="email" class="mt-2 w-full rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-500" placeholder="name@firma.de" required />
+                                    <span class="mt-2 hidden text-xs text-red-600" data-error-for="email">Bitte gültige E-Mail eingeben.</span>
+                                </label>
+                            </div>
+
+                            <label class="block">
+                                <span class="text-sm font-medium">Leistung</span>
+                                <select name="service" class="mt-2 w-full rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-500" required>
+                                    <option value="">Bitte auswählen</option>
+                                    <option>Büroreinigung</option>
+                                    <option>Praxisreinigung</option>
+                                    <option>Privatreinigung</option>
+                                    <option>Fensterreinigung</option>
+                                    <option>Grundreinigung</option>
+                                    <option>Baureinigung</option>
+                                </select>
+                                <span class="mt-2 hidden text-xs text-red-600" data-error-for="service">Bitte eine Leistung auswählen.</span>
+                            </label>
+
+                            <label class="block">
+                                <span class="text-sm font-medium">Nachricht</span>
+                                <textarea name="message" rows="4" class="mt-2 w-full rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-500" placeholder="Kurze Beschreibung (Fläche, Häufigkeit, Besonderheiten)" required></textarea>
+                                <span class="mt-2 hidden text-xs text-red-600" data-error-for="message">Bitte Nachricht eingeben.</span>
+                            </label>
+
+                            <button class="mt-2 inline-flex items-center justify-center rounded-2xl bg-ink-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink-800" type="submit">
+                                Nachricht senden
+                            </button>
+                            <p class="text-xs text-gray-500">
+                                Demo: Kein echter Versand. Live-Projekt: PHP-Formular (IONOS) + DSGVO-konforme Hinweise.
+                            </p>
+                            <div id="formToast" class="hidden rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-gray-200 bg-white py-12">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div>
+                        <div class="text-sm font-semibold">CleanPro Reinigung</div>
+                        <p class="mt-2 text-sm text-gray-600">Professionelle Reinigungsservices – modern, zuverlässig, effizient.</p>
+                    </div>
+                    <div>
+                        <div class="text-sm font-semibold">Navigation</div>
+                        <div class="mt-3 grid gap-2 text-sm">
+                            <a class="text-gray-600 hover:text-ink-900" href="#services">Leistungen</a>
+                            <a class="text-gray-600 hover:text-ink-900" href="#process">Ablauf</a>
+                            <a class="text-gray-600 hover:text-ink-900" href="#contact">Kontakt</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-sm font-semibold">Rechtliches (Platzhalter)</div>
+                        <div class="mt-3 grid gap-2 text-sm">
+                            <a class="text-gray-600 hover:text-ink-900" href="#impressum">Impressum</a>
+                            <a class="text-gray-600 hover:text-ink-900" href="#datenschutz">Datenschutz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex flex-col items-start justify-between gap-4 border-t border-gray-200 pt-8 text-xs text-gray-500 md:flex-row md:items-center">
+                    <div>&copy; 2026 CleanPro Reinigung. Alle Rechte vorbehalten.</div>
+                    <div class="text-gray-400">Demo-Prototyp für Website-Redesign</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "CleanPro Reinigung",
+          "description": "Professionelle Gebäudereinigung für Büro, Praxis und Privat.",
+          "areaServed": "DE",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Musterstraße 123",
+            "postalCode": "12345",
+            "addressLocality": "Berlin",
+            "addressCountry": "DE"
+          },
+          "telephone": "+49 123 456 7890",
+          "email": "info@cleanpro.de",
+          "url": "https://eazybusiness.github.io/reiningungsfirma/"
+        }
+    </script>
+
+    <script>
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function setMobileMenu(open) {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!menu || !btn) return;
+            menu.classList.toggle('hidden', !open);
+            btn.setAttribute('aria-expanded', String(open));
+        }
+
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+            const isOpen = document.getElementById('mobileMenu')?.classList.contains('hidden') === false;
+            setMobileMenu(!isOpen);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
+                if (!target) return;
+                e.preventDefault();
+                setMobileMenu(false);
+                target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+            });
+        });
+
+        // Reveal on scroll
+        if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+            const io = new IntersectionObserver(
+                (entries) => {
+                    for (const entry of entries) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in');
+                            io.unobserve(entry.target);
+                        }
+                    }
+                },
+                { threshold: 0.15 }
+            );
+            document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+        } else {
+            document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+        }
+
+        // Services search (simple, fast)
+        const serviceSearch = document.getElementById('serviceSearch');
+        const serviceCards = Array.from(document.querySelectorAll('.service-card'));
+        const noServices = document.getElementById('noServices');
+
+        function filterServices(q) {
+            const query = (q || '').trim().toLowerCase();
+            let visible = 0;
+            for (const card of serviceCards) {
+                const text = (card.textContent || '').toLowerCase();
+                const tags = (card.getAttribute('data-tags') || '').toLowerCase();
+                const match = !query || text.includes(query) || tags.includes(query);
+                card.classList.toggle('hidden', !match);
+                if (match) visible += 1;
+            }
+            if (noServices) noServices.classList.toggle('hidden', visible !== 0);
+        }
+
+        serviceSearch?.addEventListener('input', (e) => filterServices(e.target.value));
+
+        // Quick CTA -> prefill contact form
+        document.getElementById('quickCta')?.addEventListener('click', () => {
+            const service = document.getElementById('quickService')?.value || '';
+            const zip = document.getElementById('quickZip')?.value || '';
+            const email = document.getElementById('quickEmail')?.value || '';
+
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+
+            const serviceEl = form.querySelector('select[name="service"]');
+            const emailEl = form.querySelector('input[name="email"]');
+            const msgEl = form.querySelector('textarea[name="message"]');
+
+            if (serviceEl) serviceEl.value = service;
+            if (emailEl) emailEl.value = email;
+            if (msgEl) {
+                const base = msgEl.value ? msgEl.value + "\n\n" : "";
+                msgEl.value = base + `PLZ: ${zip}\nLeistung: ${service}\n\nKurzinfo: (Bitte Fläche, Häufigkeit und Besonderheiten ergänzen.)`;
+            }
+
+            document.querySelector('#contact')?.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+        });
+
+        // Contact form validation (demo only)
+        function showError(name, show) {
+            const el = document.querySelector(`[data-error-for="${name}"]`);
+            if (!el) return;
+            el.classList.toggle('hidden', !show);
+        }
+
+        function isValidEmail(v) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v || '').trim());
+        }
+
+        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const form = e.currentTarget;
+            const data = new FormData(form);
+
+            const name = String(data.get('name') || '').trim();
+            const email = String(data.get('email') || '').trim();
+            const service = String(data.get('service') || '').trim();
+            const message = String(data.get('message') || '').trim();
+
+            const nameOk = name.length >= 2;
+            const emailOk = isValidEmail(email);
+            const serviceOk = service.length > 0;
+            const messageOk = message.length >= 10;
+
+            showError('name', !nameOk);
+            showError('email', !emailOk);
+            showError('service', !serviceOk);
+            showError('message', !messageOk);
+
+            const toast = document.getElementById('formToast');
+            if (!toast) return;
+
+            if (nameOk && emailOk && serviceOk && messageOk) {
+                toast.textContent = 'Danke! Demo-Modus: Anfrage wurde lokal validiert und würde jetzt an das PHP-Formular gesendet.';
+                toast.classList.remove('hidden');
+                form.reset();
+                setTimeout(() => toast.classList.add('hidden'), 6000);
+            } else {
+                toast.textContent = 'Bitte prüfe die markierten Felder.';
+                toast.classList.remove('hidden');
+                setTimeout(() => toast.classList.add('hidden'), 6000);
+            }
+        });
+    </script>
+</body>
+</html>
