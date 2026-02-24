@@ -205,7 +205,9 @@ Dieser Businessplan wurde erstellt als:
 
 Für Fragen zur Erstellung professioneller Businesspläne oder zur Verwendung dieses Templates kontaktieren Sie bitte:
 
-[Ihre Kontaktdaten]
+Nils Peters
+nils@me.hiplus.de
+
 
 ---
 
