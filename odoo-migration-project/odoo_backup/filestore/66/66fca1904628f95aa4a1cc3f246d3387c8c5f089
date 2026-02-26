@@ -1,0 +1,1507 @@
+%PDF-1.4
+
+%âãÏÓ
+1 0 obj
+<<
+/Type /Pages
+/Count 0
+/Kids [ ]
+>>
+endobj
+2 0 obj
+<<
+/Producer (Odoo)
+/Creator (Odoo)
+>>
+endobj
+3 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (4697441bc62c7402909af6a79ca6c53d)
+/ModDate (D\07220241230090115\05300\04700\047)
+/Size /6911
+>>
+/Subtype /text#232Fxml
+/Length 6911
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>12.10</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>0.00</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+4 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 3 0 R
+/UF 3 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+5 0 obj
+<<
+/Type /Catalog
+/Pages 23 0 R
+/Outlines 21 0 R
+/PageMode /UseOutlines
+/Dests 19 0 R
+/Names <<
+/EmbeddedFiles <<
+/Names [ (factur\055x\056xml) 17 0 R (factur\055x\056xml) 15 0 R (factur\055x\056xml) 13 0 R (factur\055x\056xml) 11 0 R (factur\055x\056xml) 9 0 R (factur\055x\056xml) 7 0 R (factur\055x\056xml) 4 0 R ]
+>>
+>>
+/AF 6 0 R
+>>
+endobj
+6 0 obj
+[ 17 0 R 15 0 R 13 0 R 11 0 R 9 0 R 7 0 R 4 0 R ]
+endobj
+7 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 8 0 R
+/UF 8 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+8 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (4697441bc62c7402909af6a79ca6c53d)
+/ModDate (D\07220241230085913\05300\04700\047)
+/Size /6911
+>>
+/Subtype /text#232Fxml
+/Length 6911
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>12.10</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>0.00</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+9 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 10 0 R
+/UF 10 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+10 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (4697441bc62c7402909af6a79ca6c53d)
+/ModDate (D\07220241230085828\05300\04700\047)
+/Size /6911
+>>
+/Subtype /text#232Fxml
+/Length 6911
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>12.10</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>0.00</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+11 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 12 0 R
+/UF 12 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+12 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (4697441bc62c7402909af6a79ca6c53d)
+/ModDate (D\07220241230085706\05300\04700\047)
+/Size /6911
+>>
+/Subtype /text#232Fxml
+/Length 6911
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>12.10</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>0.00</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+13 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 14 0 R
+/UF 14 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+14 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (4697441bc62c7402909af6a79ca6c53d)
+/ModDate (D\07220241230085240\05300\04700\047)
+/Size /6911
+>>
+/Subtype /text#232Fxml
+/Length 6911
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>12.10</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>0.00</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+15 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 16 0 R
+/UF 16 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+16 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (6a024a6a59007a63031bd728ef0388f3)
+/ModDate (D\07220241230084446\05300\04700\047)
+/Size /6911
+>>
+/Subtype /text#232Fxml
+/Length 6911
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>0.00</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>12.10</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+17 0 obj
+<<
+/AFRelationship /Data
+/Type /Filespec
+/F (factur\055x\056xml)
+/EF <<
+/F 18 0 R
+/UF 18 0 R
+>>
+/UF (factur\055x\056xml)
+>>
+endobj
+18 0 obj
+<<
+/Type /EmbeddedFile
+/Params <<
+/CheckSum (ebda2130cca18b621bc3a818d2141700)
+/ModDate (D\07220241230084146\05300\04700\047)
+/Size /6897
+>>
+/Subtype /text#232Fxml
+/Length 6897
+>>
+stream
+<?xml version='1.0' encoding='UTF-8'?>
+<rsm:CrossIndustryInvoice xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>INV/2024/00001</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+    </ram:IssueDateTime>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Description>LÃ­nea 1</ram:Description>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>10.00</ram:ChargeAmount>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:Name>Exartia Auditores InformÃ¡ticos, S.L.</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia Auditores InformÃ¡ticos, S.L.</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34932924007</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">administracion@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Barcelona</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">ESB64857691</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>INV/2024/00001</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Exartia - Test</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Exartia - Test</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+34 932 92 40 07</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID schemeID="SMTP">info@exartia.net</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>08906</ram:PostcodeCode>
+          <ram:LineOne>Ametller, 1, 4-1</ram:LineOne>
+          <ram:CityName>Hospitalet de Llobregat</ram:CityName>
+          <ram:CountryID>ES</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>INV/2024/00001</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>2.10</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>10.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>21.0</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20241230</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2.10</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>12.10</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>0.00</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>12.10</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+
+endstream
+endobj
+19 0 obj
+<<
+/__WKANCHOR_2 20 0 R
+>>
+endobj
+20 0 obj
+[ 0 /XYZ 24 603.5 0 ]
+endobj
+21 0 obj
+<<
+/Type /Outlines
+/First 22 0 R
+/Last 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Title (Factura\040INV\0572024\05700001)
+/Parent 21 0 R
+/Dest /__WKANCHOR_2
+/Count 0
+>>
+endobj
+23 0 obj
+<<
+/Type /Pages
+/Kids [ 24 0 R ]
+/Count 1
+/ProcSet [ /PDF /Text /ImageB /ImageC ]
+>>
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 23 0 R
+/Contents 37 0 R
+/Resources 26 0 R
+/Annots 25 0 R
+/MediaBox [ 0 0 595 842 ]
+>>
+endobj
+25 0 obj
+[ ]
+endobj
+26 0 obj
+<<
+/ColorSpace <<
+/PCSp 36 0 R
+/CSp /DeviceRGB
+/CSpg /DeviceGray
+>>
+/ExtGState <<
+/GSa 35 0 R
+/GState6 34 0 R
+/GState11 33 0 R
+>>
+/Pattern <<
+>>
+/Font <<
+/F7 28 0 R
+>>
+/XObject <<
+/Im9 27 0 R
+>>
+>>
+endobj
+27 0 obj
+<<
+/Type /XObject
+/Subtype /Image
+/Width 300
+/Height 157
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter /FlateDecode
+/Length 3672
+>>
+stream
+xœí¿nİ¶Ç<‚Áø<{êì)s§ OPô	‚>A‘±SæL™3uîdxôdÜÑSà1(~”ÄK‰äá¡$‹²û>(Òë{)ò~ùç"Şıï                                                             à5ğóÇóÏæ8ıòkó¼m¢A€@ƒ mAƒ mAƒ «¸¾}úó¯ç/_§€ª¹¸:½ÿè¤çCšÏÿ³854`åòæôá÷çoßc¥ A€PòÖhĞıVÁ	¿yÁ‚Ò[­Ñ  Aƒ mAƒ mAƒ mAƒ¯Œ‹«Ó‡ß»ÕÛ¿ÿIxíÇ³ûüéÓç‡ëÛöY}	®o»´OŸÏß¾Ob}ß¾»qZFİ/oº§»Lşòk÷‹+Ë¯^¥îˆ—Á9¹„”åñÔ‰ÑVúPv1Í§ßş°æöÃïzRÖVb\¶¶doR{¿}wyXlmÅÔU£LºÁõovL-héÕ$Î&z6~w©‘#Âõmì_»éLO¹¼Ñ½&UÂ´®tq¥'•¨Æ©R×µ9™ÛÛ¥¦Í•åZ›Lagßìtº²8aİ.u‘úÏ+4ØÔí¹¸zşòu½¿Šmæ¹:­vıƒÚ‰tÜİ¯TÁ’êjŸ*K÷ÎÛĞ`[G4Æ	pÃâÛvÿZZ<½Asİ®şsã(tÃ²w8á×xß¢Ánc§n(4¸Ú-ÙT€ƒ×,2tÃÈâ¸W‘n2
+}	×Wz_yºT~‹ ĞàzG4ÄRp™˜w©/_†²ÌwÊşö=mµ­ŠòmïúZ Ùl¹àqhp#ZQp–›Ş&ı²E!®òxÚ âÄHÎ…Q¨1ãóôOîÃî¹q:×·n„lêÁ?=¨üÆIúÛĞ`[G´Aoc]æõù”ŞİkÆ·ŠõD†œ„í@i[;×ØÏİ(Ú6‹ì*€^÷lQbM/EËd4(«‡3
+¾»2,>–´Í4ØÔMĞgú&Óér°…%-KáˆTÏö‚µfq}Õ§ Gw!âÚ>«[˜şí™¸Öüğş`[G4ÀÉGñˆùd½øÆ1¡e©BªYa
+Y9
+êØ(FTŠThĞµi+v%_ƒm±?›hgpA¾+´ËK½¾ôQèş£ÍŒ¶a€QƒkÎ{²zx¶uÄşlØnhQ…LT3Ai­Ad¨Õ"û³6DS›¬gÑàµèmkp½#öGÉpm8Wk‚j¢R–¥
+íAV‚vĞà&ãß¸W;bgtwÔMO­*©â†l7…:E_ßvoô;öeñ|3sÿ§—ÖàVıûkÕà^ØKd+j]`ÈŸëÏê¹ÒÙ2râßâë/ Á­Şx]Üß;³íîÆ.¸¾-OCOŒBå ªçî¥Á­Î%{lçˆÙUƒõÍxqÕu¹‹“•óıÇÍnw}Yƒ9ıølëˆÙSƒ6ìUeoå
+ìâ¨Éõ†XJ¡°ÛÅÕ®ÁæØ™CkĞE+±¸+Üä•É•Ó}±áúò‘5xGìÌqÇ¢–UÂ˜EÅ×ÏÜİ»JÒ]òşc¼r¥ëÑàA±3ú„KÊÙŠºZ—ePÀ·ˆıñÔ5 ¥ü£ÁU<Œ#vFwG«W®V®˜T½.Q|V·Şai=Ôíh°h„ã8boÔÛmö×•–$ÊS†âËV…×¼ŞñfÆ¢kœ¾FƒÇqÄşèKá{Ç‘J¯"Ê˜¶¼bk®Hú+Ûö.UWĞkÒàŠ ş*Æû³ù[x/—¯,Ë†RãRÅšj3IG‹ùH,–zqÃ»Æ˜ÇqDJ•¬İ fŞİQu<šeÉbğÂ±´¶İ§Åœ¿..¬ÒàaÑ„â:ËdØİô*—?Z¾_z‰~^1Œ§±•&zÙM7ì©;œK¦[¶7uãˆ6XVÃûcFŒ©…›l•§Ğ¤æwkNc;?·á)Ìl›Z¦AËÒO÷‚›…7YÈŞiİ«4xG´ÂºAH·’Ë5ü=#ãeg#;X*Oy«dÆş–l¯<8{dúõ­}SÇÑ4¸xõçåætÇqD3JÉÅ”+O©Ö¦'Æ©Şz[Ş‹‘ë¥älU×eW¾Js4Ö¤Zhğ8hIí»BFôe‚¢ˆJ«¦Nj"[¤Ôº¡äp\º3óE5xG4fÍuKy´šPš˜Xâä¦+Ô¥Šõ[…% µÆõ;kpÙÜ—^_8‚#ÚsqµÁµS3eUœ•Xƒä¶ê´2&åÇ³DÎ•,aÆ½5ønÉÈg‡5¾æ8İ¨`“Q¹‹°XjŞ‹7cJKİöÊ:)7A?Ï‹ÈÒ˜4Ğà»ê‹~öYgoëˆCáŒÖ5)&‰şv€|âE××Lñöâ[æ#ºË^§9|•ô¶~Æ&Ç–mçˆcÒ£>^«!ÃàÆ’/®â×¾B–l—*¥Y•ìPd¹9Ú	Æ¢ei&İŸ¦.w8Ù¯‰Ïÿüd¸ëaz>…¾÷ïè=õW½[LW0şšº·§#                              à?ÌÓŸuçlğ~:@úó™_Ñae o9¼«y6 ş£ôg@µÏÆÛBÎ(Îµl§÷İ_ãGü¹?«x–œß¦“c+W\nåø¯oßÓé_ŞÌùôy~@YôÄ}m—72ëÊ¢ï'eŸ\•8Zc–ÃØnI$FzıÍVçü¤„vAÊø³Ü&-“.ìõm²\aÊiÛöËU'ïÜBF2ùåë¹
+í|¯t=ş\ßäIzrlc|BcüyúÄÔé”Ãã‚t,GƒvtËÉ“w÷İ³äß.ı™C“·Éüx”.÷@³S.õ3*¥ìa•ğÖ˜]¢Û-iÉeCşHŞşˆ?MO,„¤fíØÙ¶©ÛıÂ;­’%õ_ˆu¤Ÿ*BÈU§³ss97!¶çÁ;îá¨ê¾øi§TjĞ—7<Bvæ¯œ‹ånÁd<äóî>”Rw2³¤È|ˆ“[ï¯0«Êƒ†öwˆœËâÒWÛREƒ?gW	g4¨h\’š¨òòF
+5+Â$WŞ>a-è"êËÂËS™‘››D,§*ƒ(…®?æTüÛ÷‰¡[­FÖÕ×“>ƒÇoE&ÃÅš©cák0üÚ,åjÊÕ©cğ‡jÔ‡8Ñïä]ƒ½«Î¸Îj°¯ÏaRµÌşu¼»*lßâlH-|2vqÛ(Zğ=]ÂAıºÿÊ£óıK…åZö`²ÆÅípôÅ—ñ^Ò)J¡ŒôÕ lÁj5èëF²âß×d5ôòVar<W×±I¯ÕàPºTK.f	‡ë¹l„ƒ?2ú‹°}ƒì‹ŸÎL/É³rWµ]ƒ"y}¥Ãn„s›¼Ãå[pJ4ÀX¯A1KXUj58ä3‘¿z}ºÜâí¦ğîéRs‚áì;ñÁòçé†«fof5ØŸÙ6§A÷ If¤¾I‘»H1êAü€í4^c+ÅBeHy6Kğ¬¤ƒ&M™|9CĞ*CT|E_qÆÊFpÿ;
+º§{ú ƒÿÀƒ’ùä`rceÕj0—r2'§øÂúé,2ıYİd*ˆNÇ6Š}m—DŒ1Iª<oZ2ÉÄ9÷?‘ËÂüèBšJiÊ’ò½dø¿9ËTh0ÿÑkE6…Ë›ó]6¥kÚğ†fszKÑkÕàã©»¸Äñ¦¿|g$uqŞoµSÆ]É†Ÿø˜ƒ“$úÁ~åœ™¾_¦A¹´%´	rÈçA”pPÔùhÑ ¹jãûålE­Õàø+ß"vKÏÃ>Îï‰ŒEÍMŸ>ÍÍ‡°ÒØÜÍñ5¼Ê­üü(Õ5ø0S‡}>8Ş Ÿ®¢>8}èÏ±ÿy$4ş9 !a¨±ù4´f§smÉ½«+ƒD™Taò8™ªŸf$ÈR˜ó¢ÀÌÈÓšŸ5»3`oä8,ç*“‘<$ƒáRÓ‚¸ë<‘TU¬Ó`©#N~!^©ñıi…Õ*Zl“íOh|?UŸÍ¸c)w&ÍX“ñóå|WXe„ùoKcİVä‚QçQ“ÿpœ}O¾,6/	³Wl'—‰ã\)Ò‚«QW8t‘êÚŸTûŠ¸hŸóğßÅ¸AQƒ>q+§×¢óoÖËÆÓEŸùCS‘“‰ñÇ/K?±Çx4îÓFkşNóhÚ¾Ì“«½dK¢¾#dè5ÂMhã¬Jnüìş7Z™z˜·ú%‡Õ±Èw4è/Ñ–N]Ü¯ßb§ŸHÄ&G'çƒ³ÑòPØqb¥ïR¶hğ²«]£ñşxvgõûµÕLëd"}šhf|?¤8ÿN~§¯ÿ$]Øà†toönç[¸ìb4BŸÔP	åùˆzC²ÍšXI7m:f7§nœOl”º»O‰ßM"$>“ùDf:JÆEÃ,M
++QnÕ¤&!Ğ*.—K|]{ø¡Ctâó>Î!×WJ–Ù§¯_+¬¢§#ŞYxĞd„Ù$+Øìt,úE¨ìÈJ6Æ'GòÃ\hbükñâl"î'îóÒzÜI¿áZò?{zQòùÃÔÚñ8çd¿ÍÙı6úy2‡	ã¸òºoÖ\œı²¸ ùÄ¼ñŸÌL—+‘!'¦ÂëOÑÅ                                                              o‘ÿŞ†â
+endstream
+endobj
+28 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /LatoRegular
+/Encoding /Identity-H
+/DescendantFonts [ 30 0 R ]
+/ToUnicode 29 0 R
+>>
+endobj
+29 0 obj
+<<
+/Length 777
+>>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+2 beginbfrange
+<0000> <0000> <0000>
+<0001> <003B> [<0042> <0061> <0073> <0065> <0020> <0069> <006D> <0070> <006F> <006E> <0062> <006C> <0031> <0030> <002C> <20AC> <0049> <0056> <0041> <0032> <0025> <0054> <0074> <0045> <0078> <0072> <002D> <0034> <0038> <0039> <0036> <0048> <0064> <004C> <0067> <0063> <00F1> <004E> <0046> <003A> <0053> <0035> <0037> <0075> <002F> <0068> <0066> <0033> <0076> <0044> <00F3> <0043> <0050> <00ED> <00E1> <002E> <002B> <0040> <0077> ]
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+
+endstream
+endobj
+30 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /LatoRegular
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/FontDescriptor 31 0 R
+/CIDToGIDMap /Identity
+/W [ 0 [ 463 572 454 384 464 171 227 727 489 492 492 495 227 513 513 187 513 272 602 602 513 686 522 330 514 446 357 307 513 513 513 513 669 495 455 452 413 492 669 501 223 469 513 513 492 330 492 298 513 453 667 492 606 541 227 454 187 516 724 678 ] ]
+>>
+endobj
+31 0 obj
+<<
+/Type /FontDescriptor
+/FontName /QUAAAA+LatoRegular
+/Flags 4
+/FontBBox [ -83.984375 -163.085937 996.582031 819.824218 ]
+/ItalicAngle 0
+/Ascent 718.75
+/Descent -173.828125
+/CapHeight 0
+/StemV 53.2226562
+/FontFile2 32 0 R
+>>
+endobj
+32 0 obj
+<<
+/Length1 11036
+/Filter /FlateDecode
+/Length 7050
+>>
+stream
+xœµz	p×yæ{İsOÏôôôôÜÓsß÷ôœÀ\$@€ ˆ“à€ ñÅ›bd'¦¸¶DI–­ØV,ÊL9²lYV'ñ‘Ø²×¸ŞJÙNœµÖ•k×+®ŠõF+ƒı{0a‰+Û]é~ıúõ{ÿñıßÿ7F)ĞƒˆDhç®dæÕï|ú<´<ÇCGÎ¯üıåG(8ÿBş/İ³¼pğà“Û~PàSĞ–¿Ôòÿ×?‚kß=Gï?÷ã¯s×
+JàúçG/-xÜæÓpı¿áúÂÑ…s'P}¡Ğ	¸v[8ºÜ901
+×!D<ŒHI?†¤I?&ÂÎ_ò»è"$AK	‚ùBŸC†Qs»ÿüØÔ4·ÙÉúI„äsøiBOˆ÷$é—Å·!IPFû Ô«U ^4À¸¿ş°ùBc2&£¸s¹ls—{ƒB~sÏŞæ-¯'d³ğ˜qã1Óö@˜\½ıRqûkœÅÄÛ=îPG2áqëYÖÀ™­“–!è³2‚Rs«ÙhÔj°Û“óM4£¦fUôŠÉèãôz-¥”c,WRZ½óMRÇ›¯¥%_º5@şˆÕë4…\§³;B‘tÆï³ÙYN§×1ÜÃN“ÉÀ²z³Ù|	»Ë*µBÁõŞ~3êàa8†e9£¥h¹ÂaÁ ë ­"H‡G	TiÈf«0ÚÎ½~wæ<‚n†Œmòñ^ÇŸ873S,Úl4ítÆ“]mßÎ;;ÊSÓGë?Æ¶ábŞçatxÛ¶ÖòúP¡àóéux`àñŸKfs4VíKÅcÁ ïÔ;†wœŸìëOg¬¶‡ÆåŒÅ²+¸^ 1£ãíÑHêT>ú\ÿ%™$?‡Êh
+¡B¶9›œ8ÏÆ¤ƒ –`0G_ã•‰Mmj÷‚aãv¡µÄ\³Ã$Ï÷Õy:‘Ü]	†N3ê(Œß±{öÈh¥p\Í¤Ñ’6ŸÏEã¹|2éñOQ”Á`·¹¢>¯ËÉÛí'GÇÒ£éõ|F¬Éö£Å‚fZ+Úü6Ÿ[¬ñDOÏÈÚç°BnõZmz½RIÓ<ŸLló[l:½\
+†6ù¯´Öhr:FÅõ_ÿ…ü,Úh·çÖJrà]{.Ğf÷  YóFs½\S¦·°ïbP¦V1´AoµüÅ¤Ïk6«)ÌrO4ODcn/ËawUÆvoÌùÔœ–Ñ›­o2ìv›LÊÀ¹=‘H2‰xÜ‹±Ñ‹wwO.¬¨2<A‹)J´aWÀbÑ3Z­1èE—³é”ßÏíT™#°Z©¡Ô*ŒUj½Ál±Lf½^£ÕÒz½Ízò…`Øhr9hPßú¯ÈS £êCˆmÙIËÖE3q7—+d6oš¶šˆ;»q"ÚVo/ÆÇ—'Áaï2®}Öôç³½•xÔå4r:ƒ:á
+ER)AÈ,îïìt»ŸÅÿ
+ÎÁGc…³½}øÇ““]ŸÛÙÜÈèb@£Å³İ=ÑÇiµŒà.ûmv+Wº\ÕêŞùÿZJ¦¼–íïWus¿4‡œÈ{gU[á¬5{–˜³J­ãf3g`hµR©¦À%¸ÒÑ*¥û†äe F§„MÇL&ñ£P*ŒÎÀİš%Ÿ¾½övĞúÈ²(â¼ÍÔzi~‹X/ÓfW&¸lÁ(seÁ£¢„jurog‡•uñá`,ß^ê†8îN¤æÃ>ŸÍA3øF<1U„(ù´goW(”ÍÎf|~“ôn6Åã==SkBŒ-0Öhmp¤°ö1z¼XÀNwqmdt¥ş
+ùg€<‚¸ÂŞ5ß6!5œ€aš^“kÓ³\œª¦sdxygOw2†f„áá½Ó•J|½çÁÁÃó±Xq¬³’®¿"ù¾ûğ@,êäËåÙ¹S÷ÌÌu÷ø;ì¹ú!Â\1[ñŞ½Ÿ™ï©EBë÷×`†=`›Ÿy:Á:xg-¶`JhN³s5ìâ;J»&–WÆÇ:K¼ÓÉ—:ÇÆWV&Æ;:x×sŒÎëÉ
+ıWû{{û¯fWÇào™›­V¼·R;r|f¦Úå†­«:3slWw-–0š÷ÌÿÑ'÷ìY'º{7tO>su´é¾¥ïßP°¦<4´8ÜY
+,¾‘J-m«V³ È¥Z8X— ¬Û)ªo İãí\›mú€è!íİĞ¼ƒy;mÁOá­ôõCÃÆAYq‹ÅfrCÃ{wW«	¥ÂÓ-dûŞ3 *ÌÆÊ•´´wíû0ŞÕQ™™;uhv®ÚP—×Sôâ6Ô5ÿüîZO$l`ı¾^p8ôøÓ!­‰üIœßGnHko~Ú¿²ù†Ô… E‘”sçÜL¶°„¾ˆß÷{˜X«a+ù:¸\«¢¤äwğØ­}—/“—Bá›rRŠe2¥(…HágÒØDõím¢…ÜÙİĞu—8`Ïã€¯»{fjeif¦»ğûÕî™™¥•©™în_à9lµD"ÅBW¹˜E¬‹5-–:º
+ÅHÄb%}şò¥É‰p(˜¼tùùÏ>py|W(Œq8´küòŸ}òàr¥Ë[Weùà“ZY®VÄ«JuyE”Õôº WQ¬-:·ÌÅ°Zwò…–™O+å:­‰³ñ&3M+äØf2{}Q^KCôÓ’Q6GëäÊF½Ö¨äÖh¶Ef£±pÄcS2*ZÉè9£ÕÆ[¢9fãZÿ•D'ˆ‘’Í	à	ğjoNh®vgŠt‹âº!.rœÌÔ¼¥mÜœõ†fLíOº.˜¸x…‡ºº¦&/ÌÌô”ärE3z»=–è½2;Ã˜ÒêIèˆ?£Ñrõk–Ù™+© ßn3°4­¦Ô2™TÙÛ½ïÀ{ONWªÁ°ÿß}­1°ú}§öì©õx=8‘/+d2Fgfˆçw¿ 0Dôz–µk5Yœÿå¾ıX­¢µzœZEJäİ{Áçëí=pàœ¨£—áÏ‰CnØóË/ŠlÚåÀÿÚ ­Æ±±	òX\²€½òkf­Vï£Ôj•Â1>)ehó#kÿüŒÔA©ÙÛË._ 6Ÿ‹|ŠÖj`P°låúºä{0*Ìğ>£ˆ"#İ¤hĞ¬›ÜˆJ‚ú<¡¾
+Ê—_XûüE™Ngü'üú·¬J©RŠó£(=î¬“¡´ÿ„àÒC§Û(®æ xá·Às†`ôÓÁù»½"è¹Có½‘Í¿]ĞX¦Hˆ9nÿPˆ°3:=ëtEcét$âKP(´´Y*‘É¦Ô_©0´mr×öm¹¬Ói4úét¾ş)ŸßïÅ¬¸ 3€’>™Í¤„´ ”J±¨İNC§-VŸ/bWQ„vv ?™°˜“½}ÓÛª]¥R>_¨_WÊe:Ú¼¹RmıçÒ.°b'xÕ:†®½Eì—İlC—ìeß.65~—ÑrÂ»ŒPã¸€?›®VÀÉüF#ØM0(äŠ•LÖä¸1òÓ*­Æxêöä7º³A¬U¡µ{=<oâ´ğÏ{¼vŞh*HŒµOc£9Ì
+¥æ`gßñiò¡G#FØ"ÑJet¤RD8‰”+·HÖhÈ´Ş¬Srù¥`ØdU-[Í¡P±
+Y-”È/)‹5*­Mvİ«kt¤Ü>Vy¤
+š[O‹áà§ƒaÑ2­àO6°|¹ˆ> \Z%¸>û¢äê‡?|ëœä*ô	­ÿ‚¸,ù–˜µ²¹Ûğ31’ 3Œ›j15µ‘cYçïDŸÀÊú¿:ìq«×jÔJ¥NF;ÊÕcÇi•šìè6`‡F©¬ıÌÚwËvÆ
+d‡rz, ®¢«rŠ((•0È	ÉoÂ<Õ|Ş½q\'kïÇëuLœ‘:¯=\ïy|cUääÓ`àÍ¸a20mvÃŞšÎ-“‹Şíµâ¾úÍ³*…â59ó
+Lí“õ›¸ï8%ÿ©Ló}•JÍâàoÈdTı“öS€üõº]­Òà{­\ı›•m°âÀélMb¼ÃC6bm“ƒì±¨•*9Ø¿?àrZ9™Qk±¥&Kòi•ÒüÈ¾|Ã$Î˜à/NûÖ^€±çñ	8,¢¡¨¥yüŸñ~XD.?èƒ\ôÈ²á…F,ğ‚İâ2nFÄ?ñÀGÿJ©Ôßx|í/ ï'ŸÁ /Åß!Gnyh×ŸÃ3j•ná0Ûl"îÎ@´1+‰ÆĞ‰¦7oMÔZ~Øæ›œğİš5¼s‡™ZíÂ½ÙœHR³CÛçg‡¶ç³Òd‡.ÔjÀ¤Kã»,wtº\ŸÂ½Ï“M×ª‚àõéY£)HÙB:ãBˆğS0ÁxO5sØ u£yG<^*Çb<o¼ri×¸70²ã00ÁdB$
+‰dµºíğ‘€w|üòLo:m±Z-étï\>w»ô°¹Üñx¾/•æí:ğ|O§úˆ{â‘˜ÓÍ¬Û$¡ÓÉè0Ö1Ng(úº
+–ù*H5Fß:çÛ ù&6ğQ<kQª–ÄŒwçĞ-JuÕÅw–Ævîß;²£˜çy`,g³{ë_£ŒFû“øQ€yF¨vw×„ï¸¡×»İ©T¹–Éø<¬³7•*u¥3k Ú1\*¸Øé*GG÷v¤…t
+²Æz–Q©	•Åb2‡ù¬æTj``¥šJyÜzpÇëM&2•tZÌ!	÷&S¢.­ÿ‚ãv 4×İŒ×íEVZ±u½[j­¢×R °ï  i«w$J¥Úhÿ@.ërºİå‰]KK;ÇŠ%J¿a500?L˜å¼L¶Ò›Íùı¬vzqá~™¦¨µ¯»õzl±e„íC{çwŒ–JnE:11ÔÍûÀµ õsBWw.ğAú`4ùƒa$_k¡“XËDÿc®¿H|ıÅ×º¤µ/ÛŞ|˜\{¾‘[ı’<)íif­¸ÖHV;ƒ-rŞæFœešÊ®ÙlYğ‰ı“•JòÆŸR[Yëé‰'MÖç0£u9âÑâÎJ9#æ‚ïéÄßZ™›­õüØÎg	üæWİÇ·Eb˜çËss§æ»káHyşZÙlŞ»5÷!X“´¹&VS”:nû°X£‹×_"¯’/ It=‚)ĞD‡–E·7V&€mËÛAâ]Š:ï!M”àØváäïä	‹ƒãC¾îè­Öd¢§{´œÍFoaÿªÔOvõÕJNmµtUz|g©Ú,„T(\Ù1’,Ök˜¡½.!İ_²>¯eNOw-…}9—»„µ±î”Šl5¹Í.,	¹¹şTÒÁ¸x3Án`uş®éZ¡€j´Ö²SNwôŠ¡Ç1ƒ‘ß‘Ë1¡TŠ`wU
+…hÌj5°^O,Şï²ÙXH”ÚÄ¹Ñ@©äRK…ÕëK¯=n³X5LÆlÜŸÈ¤ÓĞa/Xš ™qu‹ıF>!Js‹´›µ¦–!ö9ìÅÂÄØá…ááRT!Sh5:Ælñø„~!çñ1z,NUHW;B~›…¡N•èšÛ}pfx¸Ptºğ·Wæfzª> IGI-‘©Õ@TØlN$ºk;§ ¯›LZ-Ãˆå¥Î!»œ•ÊÜ¬ˆü^Ê@~ßÿn>Ù²?c›e²»qVü¶•€%27§Ïi·YM&NÔ±|‰ãxŞç¶9LVÎdèÅïT0E>›¥´t#0°‘˜ßg³Š´i=²‘ÓX6Ã«âL±‘3rÌõ=fµš&şIà§æŒZZ³¦"!àËäºÛ~˜ ‘¼şækèÉˆ¢¸=ßÆ•”í\©Á”ÛÚÿyRññµ¿%{zıWx/ù¾Œ¾ğ.µ:æ]îŸV*ÁİV3˜4-–ëÀ6¾/l\½í½e3Ç2Z±ò§eF£•åhF¡kÊK¼ò7a­Yˆ+W .l©3o›uæ­nĞ²ïV5m¥ö ”ÍBB©e-¦€/'ŒT3iÛ FŒh¬Xê(JÑ¸Õf³d3#C‹Çwïî‹*”jÔß‹w•ãIŞI3ØfÅJ…räY1»w”Š«—ïY}jJ©7dÂ1ŒÛ‹:àI,$ÍfK0ĞÙ13ĞÓ#¤]<öøj»´2¦uz†¡uŒÍæDŠŞ€Åª7°‹€³8>İô»d\Äò%À?‹¨5¤´)#ãİ¸Úp!Hw7JÏäZ²EÑKiÚ¡3›E»úŠù d<cıÙü¶L6WZY%îÅœ)S?T^YÉeí6Ÿ¯ZšYêÌæâÉ@ğÒ ¤Ğ:½V+f)¡R©¿’ô€Êz88àG¨?kÁN'94µ:9Y.;]jµAo5‹«Yûşa³kÔ>Ú	“H{—Ér™rí5p[ßıD€¢(fm’ÖP’nw±í­/[tŒ¤d2°¥O€„|ÁÑ¨Æ2²V¼mxb°:NÜÀ™Ô$Ày1îR]Û‡v”:ƒAŸcÄèÚK‡‹b~Q&>s{{öÃ@’ñ<^ÿõúÄŸJk"K7Ù8´šğ‹˜Ó¿ö‹Õ2!åiúÍO»hµj›ÒŞfVÁ¼meóFyÛàş­`&í]ûQDı·,kbdØ-Í '+O›Ä¾é-–eâ6ÒBqù¦'°É	uvlïÊK­Öfx¼f«qšú7(ŠêÛYmä¤˜×“R1Û4›CáÎÉ3·J(‰JÕ´Èï‚ßŠ™Å¸ní›e¬ãËµªZÿÖz‰©íS¡i«ıö³¬Ö* "ÕÆåL$úûr‚Ç£×‰íów×wvøıÀÜõz§+Ig"·ËhTËµ:£T*•Mi|şbiÛöÉ‰Á¬ÀÛà;‘˜ğ;İoGçÎ±İ«Û‡ÁíÆÛír,['‘H%v§›çÁVLFŸ7dcQ·“ÕŸÁŒç#¡ØlÚ·,½˜ÍÑx¥:\Me|àè´wtìÌÁm‚`³Y-‰Dµ*ÚŠlåI°âÍÚÛª±ÍÚ˜î
+«¡dÿLAü–)•Ô¿H4jÃåúCOˆ©'½ö¼Ûív¹à1I+U·Å±DJ5òK#šlEÅÍ¯¯›äÌ}ÿô±³g¦¦’‰DrjêÌÙÇê¯àâêôt¥,ÖñË•ééÕúM©'RS3çÏ=ñ¡sç§fÉÇ½ıûÎŸİ¿¯W,!Çl|ƒhÔ›‹/d¿åWm<%4úşŸ$^xˆ‚Œñú÷´jáßıybœ˜ıƒZù3­LšXÿ…äc°¢ş-Õ±»øX[0j1äÁmx§©&R©™éç?øØêêx‡¬ŒÒhõz‹ÅæÕq/L®êõz}åÊ®‰…Îd<_¡if`ü¾ûŸyô¾ûÇÇãqâÑ'.]œ›É¤ã‰ãJ©L¡ĞÂz)J©Ë±ûN_Ü Ö„+d´¨«†ö9 Â¹Ù‹ÁF^jÖâ¿6iù§—a6I¥¸8ïKø½÷ÌWÊ£:İ•ÊüÓó·Ã¥°ˆ]xÇèSÖawdóC;æ÷ä<_çˆ³â·LºëÒà ¼óı`ğo€$IDo #Ù¦äÜx±MgâBI`SäÆ÷yx¶Œ¦Ñâÿ¯/ô¦v«ûş\¯µ-ï?øÛ½ŸÌmŠ
+,vb½*VÒŞı¶O|Ï"ºAş•$"ÆFˆéÌoõ2‹øğ#øHıC¡Ëø÷ê—.×/`±Ğ†F×}Òk’ÿ‰.¢ŞA†»ÀÖ‚B{Rİ¾Rf’mÑa[ù›^(ÜùemîÉn>³[MÉxµ:2²{vir|çöÁ®ÎXÔb±;R™Zmt0§r]Õ\ dÃ§ƒ/•¦'Ov§Ò‘)=ÆJ9­aõ\4äy±|
+X8~~uutg<JMNœ<ñ¾wTC±JÓÒ¥şøûZZ,ñß¾u9xŞf3›ét°£31›	ÅòŞ½ãã}µTÊjc¬åòııSSK'&+]àÛ^Ïöa—ë¯;‘ÈŒvWÃ!•R_ÿ³¨‡ã4‰[-ÉD­{ìûzº\NŒÉ‰‰'÷c§NÏÁkLÎæáTHØ÷ş«ã½b«Za6ƒe¬•CbíH$ËeĞ¶f}]:O>#~­g¶%R½eğ’É–RH 'š3,¥–¼—R™Z©şš„¢ôzŠ’~	¬L)QÈ
+Mô±úOŞkVŞTH¥òï¨lÉ§’èÖşØÍ»xˆ nbV£R*UšµgÁÉxŞír“œƒsg8Ó,ní—ø?jÍã…Ôôà~ºükñŸÖ¶në¿®¿$½&¿LË6áéËõ?@Hù ôxPúhc¤ö­L~…%G×ÉO£IÒ‚ŠäWP†¼•ş=ºBş7P+äú ´DâE_„#MÃ¯‹H£—%?@r8”Z^E5IY‰ç`l?ŒıQ8ÿºB\@óĞßÇWáX’.Ãı5ÿ3ğûG(AN¡>ñ]Òt]¢B×ñ_£ÓäM”ûÂ±÷NÏ­ÿZìCB&±|é¤ày˜§ä54!Ù‹^‚y¾_\ÌqLF‹Òÿ†vJÏ!ñÿùEÿ‚O$qöçHD“Ï’¯JÂ’œd^òU©Lú¸ôãÒ›Ò7d«ò~ùŒü£òå¯+Ì
+¿bB±¦<¯ü'åºjBµ ÎªŸ"©$ÕG}RSÔ\×ÜÔÜÒrÚ^í{è(=E?AßÖÒ}B÷UfŠùOÌ'ôêÿGSeô„Xİj^mİhb–@5Ï1RÀÕÆ9´ØŞ<'á<Ò<— 3`æÆ¹á±æ¹ÚŸißDÇğP/:ø<º­¢Cèt?r¡ZBaøÍ JÃo¥¡múº ×y4O¬÷:-;Ğit®N¡pÕW!K:Øø]‚–³ğ{?ŒïBĞ~
+ûĞ™F€‘5Ş<
+#…VòÀˆĞvÎñÅq–¡ß©æS§oÇq5FŸÚ…¶COÚ	kû¶}÷1h™n<}
+Ú7ú¦áMâÑz³8ÓCğq•÷Á
+–aõ+ÍñZ}\[z½õ˜)”Ep5ÓXûı>ÇP´)ÃUh%s¼9ëSpvzˆ³m½'¾å=“ğ„øœksF¢Œ-‡£ˆïXh¼ë`›Ş6ätG*»ĞIsúŞw@Ëà]O‡ßÄÿƒ¶nY
+endstream
+endobj
+33 0 obj
+<<
+/ca 0.101960784
+/CA 0.101960784
+>>
+endobj
+34 0 obj
+<<
+/ca 0.498039215
+/CA 1
+>>
+endobj
+35 0 obj
+<<
+/Type /ExtGState
+/SA true
+/SM 0.02
+/ca 1
+/CA 1
+/AIS false
+/SMask /None
+>>
+endobj
+36 0 obj
+[ /Pattern /DeviceRGB ]
+endobj
+37 0 obj
+<<
+/Filter /FlateDecode
+/Length 2406
+>>
+stream
+xœí]Û6ò]¿‚ÏVË~‡É&{è=d{8ÜCà6=I¯iÜßïP’mŠc‰òÆQhGIÓ•ÆçûƒäÈ{ÿ÷·ïÄÏˆû‡·¿‰İğóám#[gdÿGÄ¿wc€ºÅî^ì>6ŸÄ§æMó†ş¿ÿÇ|l\Pm–n?¤·^ºTRk‚Ëü6şoó¯ïÄ¯4á2Ùgµ“Æûx­ƒ„`¥‹×ƒpVü±ûµ¹ï9j4¶¤Xh­–ÎuDÙ„NÔÓz¼3)ÜYÙB §ã,†Ğ¢µ0‚:hQÓl(vMG©HB€ÖÄ¹S¸o¬H0"`ë²Ş‰„¾ºKùIàåZ 	&¸®èJztf„q=Ğ·kxÂÏ‡üÈ}‚1‘ÔiyïH‘ï¿K•Ê¡!íÅëî‚Ô¯0ì•øç»?²Q‘dMD…D	^©Îó{2A’¬RR@Ğ‚.ÿ©yO–øÅ±¢2=ZÖD«ˆËˆ6¢_­ÅĞsëÜšh½´=Zı™º}w–5E;&9¯ƒ°3¤ˆ‘iŒÅXB˜×ÁØ™Oä‘ÌgŒåDŒú¤½t"Š9Ä«}¼ËçÎ†ÖA˜F u0¦ÁgŒiÜYcr6ÃÙçR†ó…2¤qHqjZ®—˜AwhAÙ5ÑFnµQ=·+–!ÄmDÛq»Nşê8…^¯+eÌÈ$ô*½USû¹U©¦Æz«Rí0RNYY«JµÃk‚ã›eÏ	ƒaDÇkmdğRÅDvÈ€#Â–ŒûğÏFŠÿÿ ¿ˆÿ‡pş8Ú­9éË§æş‘²´Oï‰ÓÈÂ]ÿã‰4íéNúìGñ·¸ô½xú¥îÓ‚Äª¸#@ç#LPG€í úp=šdˆï á9àE`³¾ÌG<ä#zR_?‘¢ëÓ…0ÒÅ«œ×9à14ñºf†ƒ_n7 k¦¾sMOÄö®cÔ÷p„¨ÂYÖ¹s+ S³P‚…±ÃLvÂÊkåOø›5Ù#Ö[t1]S ÆÆ­vèIAÈ²Dyü®ÏCºÀÔıIË²D­¡ğv&<¤z®cFs/œ0l½Ô°kc¸7l?˜Nöµ—?´Ú¼ƒ}ş¼ÛlnÄğ"3sn÷¬JaÀDı2Ÿƒ°¹m±,¯ÒÂ*«Qz&Mòz1g˜ÕàŒ6y¶b¥-óòâ#ğ›Ó÷«Úue'+N`‘r¢&MF<æ#r‘a|h?½<`Ë¶¢È=qqš36£Š¾Ê)ÓÁØÏ×>Ü–s´¨ŠÑ­ú˜qÌWå…+“êâJ¶,w¶*ÅÚeò æ"e'Ê¥Šæú€¸'Şæq…­âĞeü¡Ïm¢ê™Ó)ÃLãÈJæH,<ó–Ç|Ì½Yxb“²4‘$Ák\I)3]pâØ¸€Å``Q
+’—[->äóÁ.­˜F~Y›\@‡T0cŸªXcRb¹ÌW0©5zéc¢³W,öšf¥RácoL |f>Ï3!EŸT‡%Û>„9if|òôø3ÕYF:ŸÈôıØ'Y½–È—UR,v×xSUá\üX*Wa¬:Eº_äO©øê×ùQÅfï°J––$ƒ±%ÙÌ{„o±…O>nÓ¿ìU8˜*?Âê¶bXpÔÅ†ÑğUf¸M/µWç¦5JQÜ)* !"+Š{…laÌ7˜³…[\ç(uÚì+«¢Ú-•ëPˆ%›”,&•İ8—	Z,ÇCÍB206>Ã“åm©¢áğMüó2§Ü<PŞ\à¡fİ84©nØNÇ‚¦.×¥ç,u±M§J¥æ½ı\©ñÃÑò©QÕ*]†1no¹£(æÌû˜Ùë¹ºÏD”±©Hœ
+]W§ñ8Ïß­µ&¹±B·å¤q€e¥ªÓCß}ö©¸ï>;2|]İgİ‰¹©FYše‰êU/Î&ö Î*ßÊéK]à”uÁÙ;!¨<+µ“	?ÛâÇ_¬gñ‚ëå¹u{±I` ©ö¯ÌwıÛSRÍŞ½¬ [°­AãÁZ¼»¿£}6§LçìßÑOg½­Ÿ~0zo? mÁ8eúõ³Ûñc‡7øç{Õ/ÃÒ§tkdÿgÀf´ÕÁúøŞı7‹Eí¿ğ€øŠB7‘*qÿÃÇ Ä«ÿİÔN–£%ï9tÁÖÒXÆ«X
+àq´¼P..oÏù:‹m½>æ#Êt°¨\.÷òKpåV¤bO;†W>ÁVY¾æÔã5¥¯&oëè«IY”-î@*áUzú¶­…ûO±cDÁ&µ³_C‰m	øânÕÔ„ÏAsØjº‡‰óûŸçÖveÉÖCIåuÿe®ƒŠÍµ6×Ú\ëÚÅş¹V¤‚(íÑÎZoi]¤W¤âİ±ñ›]hG³T;ÌCk¼%uTV­ÒÆHÕé$6V9Â*×jå0×­•ÖË@šÖ¦õ€İ	º–Ì$Å®Am[t4‘m°ŞÛ`…Çx©¡{A“f§Ïì„¦âgg´¢§!‚FåG†£g?8°-æ}5ªÚÇâ:(Ùbñ‹o&oeÎæZ›km®µ¹Ö—2€ËŸ±u°ë¥¹Ànœed30²T¾Z¯:cùm?|¡|É·sŒŠ’
+òş¼ùÎz]ò½iö ?É'ø#¬gáü®†r‹{–ŸŠLô{Ïõñğ“àòW¥ÛtùÉÙ—èôQü5Uv„·ÊY9;o-7%-øêfCLÊlâI{ÿœ5Ó0€êÍ.éóYa"¹!Õ\ı‹ğUÿ»9âµñ¾»×Ã/ïğYh/_ÚÏC:ß¿hÌ!´ƒœ~a„uhğ¦¼rø›èŒ/k‘§D3n!¨fĞ§hf‘5şÕ­	ª÷šX½v\2]Ğ¡•Ê*â»[¶Œo?«=7ğ”åóõ)øÊÕıeº9qn_»†6ƒßşœ£Î5±?ã-GœJ…‚´.‘î`|Ü:4Z·tüõr^ÛVzç½.ş8¯%¢ğÊ´Zy‚‹ä|Ñ“ÎÁ¥}ü…vGxA™ ­±ĞÓ­ÁÖ¢ñ& IN·(m 8×¢à¡ó„ÙZ*YNS¿›9Ø\?~]
+¶8X³8o*n‰3øÍà¯]CßºÁ_ò\­tˆ'Ş41" š
+endstream
+endobj
+xref
+0 38
+0000000000 65535 f 
+0000000016 00000 n 
+0000000069 00000 n 
+0000000123 00000 n 
+0000007247 00000 n 
+0000007384 00000 n 
+0000007736 00000 n 
+0000007801 00000 n 
+0000007938 00000 n 
+0000015062 00000 n 
+0000015201 00000 n 
+0000022326 00000 n 
+0000022466 00000 n 
+0000029591 00000 n 
+0000029731 00000 n 
+0000036856 00000 n 
+0000036996 00000 n 
+0000044121 00000 n 
+0000044261 00000 n 
+0000051372 00000 n 
+0000051415 00000 n 
+0000051453 00000 n 
+0000051518 00000 n 
+0000051625 00000 n 
+0000051726 00000 n 
+0000051851 00000 n 
+0000051871 00000 n 
+0000052085 00000 n 
+0000055928 00000 n 
+0000056069 00000 n 
+0000056898 00000 n 
+0000057351 00000 n 
+0000057593 00000 n 
+0000064732 00000 n 
+0000064786 00000 n 
+0000064830 00000 n 
+0000064923 00000 n 
+0000064963 00000 n 
+trailer
+<<
+/Size 38
+/Root 5 0 R
+/Info 2 0 R
+>>
+startxref
+67443
+%%EOF
