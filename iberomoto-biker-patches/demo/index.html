@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iberomoto – Custom Patches für Biker</title>
+    <meta name="description" content="Gestickte und gewebte Patches für Bikerclubs, Motorradclubs und Vereine. Individuell, hochwertig, weltweit.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">IBEROMOTO</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#leistungen" data-i18n="nav_services">Leistungen</a>
+                <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+                <a href="#ablauf" data-i18n="nav_process">Ablauf</a>
+                <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+            </div>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="de">DE</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tagline" data-i18n="hero_tagline">GESTICKTE & GEWEBTE PATCHES</p>
+            <h1 class="hero-title" data-i18n="hero_title">Dein Club.<br>Dein Design.<br>Dein Patch.</h1>
+            <p class="hero-sub" data-i18n="hero_sub">Individuelle Patches für Bikerclubs, Motorradclubs und Vereine. Hochwertig gefertigt, weltweit geliefert.</p>
+            <div class="hero-cta">
+                <a href="#kontakt" class="btn btn-primary" data-i18n="hero_cta">Jetzt anfragen</a>
+                <a href="#galerie" class="btn btn-ghost" data-i18n="hero_cta2">Arbeiten ansehen</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section id="trust">
+        <div class="container trust-bar">
+            <div class="trust-item">
+                <span class="trust-number">500+</span>
+                <span class="trust-label" data-i18n="trust_clubs">Clubs & Vereine</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <span class="trust-number">25+</span>
+                <span class="trust-label" data-i18n="trust_years">Jahre Erfahrung</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <span class="trust-number">3</span>
+                <span class="trust-label" data-i18n="trust_languages">Sprachen: DE · ES · EN</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <span class="trust-number">&infin;</span>
+                <span class="trust-label" data-i18n="trust_designs">Individuelle Designs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section id="leistungen">
+        <div class="container">
+            <p class="section-tag" data-i18n="services_tag">WAS WIR MACHEN</p>
+            <h2 class="section-title" data-i18n="services_title">Patches, die Zugehörigkeit zeigen.</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><path d="M16 24l6 6 10-12"/></svg>
+                    </div>
+                    <h3 data-i18n="service1_title">Gestickte Patches</h3>
+                    <p data-i18n="service1_desc">Klassische Stickerei auf robustem Twill. Feine Detailtreue, leuchtende Farben, langlebig auch bei Regen und Wind. Die erste Wahl für Kutten und Clubjacken.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M16 16h16M16 24h16M16 32h8"/></svg>
+                    </div>
+                    <h3 data-i18n="service2_title">Gewebte Patches</h3>
+                    <p data-i18n="service2_desc">Feinere Linien, schärfere Details. Ideal für komplexe Motive und kleine Schriften. Flache, glatte Oberfläche – perfekt für präzise Logos und Schriftzüge.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14z"/></svg>
+                    </div>
+                    <h3 data-i18n="service3_title">Club-Komplett</h3>
+                    <p data-i18n="service3_desc">Top-Rocker, Bottom-Rocker, Center-Patch, MC-Zeichen, Seitenpatches. Wir fertigen komplette Kutten-Sets – alles aus einer Hand, perfekt aufeinander abgestimmt.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="10"/><path d="M24 4v8M24 36v8M4 24h8M36 24h8M10 10l6 6M32 32l6 6M10 38l6-6M32 16l6-6"/></svg>
+                    </div>
+                    <h3 data-i18n="service4_title">Einzelanfertigung</h3>
+                    <p data-i18n="service4_desc">Dein eigenes Design, dein Logo, dein Statement. Auch für Vereine, Firmen und Einzelpersonen. Ab 1 Stück möglich – keine Mindestbestellmenge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie">
+        <div class="container">
+            <p class="section-tag" data-i18n="gallery_tag">REFERENZEN</p>
+            <h2 class="section-title" data-i18n="gallery_title">Auswahl unserer Arbeiten</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Top Rocker</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide">
+                    <div class="gallery-placeholder">
+                        <span>Center Patch</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Bottom Rocker</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>MC Logo</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide">
+                    <div class="gallery-placeholder">
+                        <span data-i18n="gallery_woven">Gewebter Patch</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span data-i18n="gallery_single">Einzelstück</span>
+                    </div>
+                </div>
+            </div>
+            <p class="gallery-note" data-i18n="gallery_note">Hier werden echte Fotos deiner Arbeiten eingesetzt.</p>
+        </div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section id="ablauf">
+        <div class="container">
+            <p class="section-tag" data-i18n="process_tag">SO FUNKTIONIERT ES</p>
+            <h2 class="section-title" data-i18n="process_title">In 4 Schritten zu deinem Patch</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 data-i18n="step1_title">Design senden</h3>
+                    <p data-i18n="step1_desc">Sende dein Motiv per E-Mail, WhatsApp oder über das Formular. Skizze, Foto oder Datei – alles geht.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 data-i18n="step2_title">Angebot erhalten</h3>
+                    <p data-i18n="step2_desc">Wir erstellen eine Stickvorlage und ein unverbindliches Angebot. Änderungen sind jederzeit möglich.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 data-i18n="step3_title">Produktion</h3>
+                    <p data-i18n="step3_desc">Nach Freigabe starten wir die Fertigung. Gestickt oder gewebt, in der gewünschten Grösse und Stückzahl.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 data-i18n="step4_title">Lieferung</h3>
+                    <p data-i18n="step4_desc">Versand weltweit. Deine Patches kommen sicher verpackt zu dir – fertig zum Aufnähen oder Aufbügeln.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-tag" data-i18n="contact_tag">KONTAKT</p>
+                    <h2 class="section-title" data-i18n="contact_title">Dein Patch beginnt hier.</h2>
+                    <p class="contact-desc" data-i18n="contact_desc">Sende uns dein Design oder deine Idee. Wir melden uns innerhalb von 24 Stunden mit einem Angebot.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <strong>E-Mail</strong>
+                                <span>info@iberomoto.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                            </div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+34 XXX XXX XXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="E-Mail" required>
+                    </div>
+                    <input type="text" data-i18n-placeholder="form_club" placeholder="Club / Verein / Firma (optional)">
+                    <select>
+                        <option value="" data-i18n="form_select">Wähle eine Option</option>
+                        <option value="gestickt" data-i18n="form_embroidered">Gestickter Patch</option>
+                        <option value="gewebt" data-i18n="form_woven">Gewebter Patch</option>
+                        <option value="set" data-i18n="form_set">Komplettes Kutten-Set</option>
+                        <option value="sonstiges" data-i18n="form_other">Sonstiges</option>
+                    </select>
+                    <textarea rows="4" data-i18n-placeholder="form_message" placeholder="Beschreibe dein Projekt – Grösse, Stückzahl, Farben..."></textarea>
+                    <p class="form-hint" data-i18n="form_hint">Du kannst auch direkt ein Bild per WhatsApp oder E-Mail senden.</p>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="form_submit">Anfrage senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="nav-logo">IBEROMOTO</span>
+                <p data-i18n="footer_desc">Custom Patches für Biker seit 2000.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#leistungen" data-i18n="nav_services">Leistungen</a>
+                <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+                <a href="#ablauf" data-i18n="nav_process">Ablauf</a>
+                <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Iberomoto. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
