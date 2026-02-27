@@ -7,5 +7,15 @@
 - [x] Build enterprise demo website (Vite+React+Tailwind, Navy+Gold) (2026-02-27)
 - [x] Git commit all deliverables (2026-02-27)
 
+## v2 Overhaul (2026-02-27)
+- [x] Fix white space CSS issues (root cause: bg-white on App wrapper)
+- [x] Integrate hero.jpg (optimized 2.5MB->396KB) and logo.png
+- [x] Dark theme throughout - seamless navy section flow
+- [x] Scroll-aware transparent navbar
+- [x] Premium card design with hover effects
+- [x] Configure GitHub Pages static build (base: './', .nojekyll)
+- [x] Git commit v2
+
 ## Discovered During Work
-_(none yet)_
+- Hero image was 2.5MB PNG, converted to 396KB JPG for web performance
+- The bg-white on the root App wrapper was the main cause of white gaps between sections

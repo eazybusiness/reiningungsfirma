@@ -41,10 +41,30 @@ html {
 body {
   font-family: var(--font-sans);
   color: #1B2A4A;
-  background-color: #ffffff;
+  background-color: #0A1628;
+  overflow-x: hidden;
 }
 
 ::selection {
-  background-color: #C8A960;
+  background-color: #D4AF37;
   color: #0A1628;
+}
+
+/* Reason: Ensures no white flash between sections */
+section, footer, nav {
+  position: relative;
+}
+
+/* Smooth gold gradient divider utility */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  opacity: 0.3;
+}
+
+/* Premium input focus ring */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #D4AF37 !important;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2);
 }
