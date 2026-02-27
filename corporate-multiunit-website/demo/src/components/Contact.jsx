@@ -1,164 +1,127 @@
 import { motion } from 'framer-motion'
 import { useInView } from './useInView'
-import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Send } from 'lucide-react'
 
 export default function Contact() {
-  const [ref, isInView] = useInView(0.15)
+  const [ref, isInView] = useInView(0.1)
 
   return (
-    <section id="contact" ref={ref} className="py-28 lg:py-36 bg-navy-950">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="flex items-center justify-center gap-4 mb-6"
-          >
-            <div className="w-16 h-[2px] bg-gold-400" />
-            <span className="text-gold-400 text-xs font-semibold tracking-[0.35em] uppercase">
+    <section id="contact" ref={ref} className="bg-navy-950 py-32 lg:py-44">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
+
+        <div className="grid lg:grid-cols-2 gap-20 lg:gap-28">
+          {/* Left — Invitation text + contact details */}
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5 }}
+              className="text-gold-400 text-[12px] font-semibold tracking-[0.2em] uppercase mb-6"
+            >
               Kontakt
-            </span>
-            <div className="w-16 h-[2px] bg-gold-400" />
-          </motion.div>
+            </motion.p>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl text-white mb-5 leading-tight"
-          >
-            Lassen Sie uns <span className="text-gold-400">ins Gespräch kommen.</span>
-          </motion.h2>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.05 }}
+              className="font-serif text-[clamp(1.8rem,4vw,3rem)] text-white leading-[1.25] mb-8"
+            >
+              Lassen Sie uns gemeinsam die nächsten Schritte planen.
+            </motion.h2>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-white/50 text-lg max-w-xl mx-auto"
-          >
-            Ob strategische Partnerschaft oder konkretes Projekt — wir freuen uns
-            auf Ihre Anfrage und melden uns zeitnah bei Ihnen.
-          </motion.p>
-        </div>
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="text-white/45 text-[15px] leading-[1.8] mb-14 max-w-md"
+            >
+              Ob strategische Partnerschaft, Projektanfrage oder ein erstes
+              Kennenlernen — wir freuen uns auf Ihre Nachricht.
+            </motion.p>
 
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
-          {/* Left — Contact info */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="space-y-7"
+            >
+              <ContactLine icon={Mail} value="info@apex-industries.de" />
+              <ContactLine icon={Phone} value="+49 (0) 123 456 789" />
+              <ContactLine icon={MapPin} value="Musterstraße 10, 60313 Frankfurt am Main" />
+            </motion.div>
+          </div>
+
+          {/* Right — Modern form */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-2 space-y-8"
-          >
-            <ContactInfo icon={Mail} label="E-Mail" value="info@apex-industries.de" />
-            <ContactInfo icon={Phone} label="Telefon" value="+49 (0) 123 456 789" />
-            <ContactInfo icon={MapPin} label="Standort" value="Musterstraße 10, 60313 Frankfurt am Main" />
-
-            {/* Decorative element */}
-            <div className="pt-8 hidden lg:block">
-              <div className="w-24 h-[1px] bg-gradient-to-r from-gold-400/30 to-transparent" />
-              <p className="text-white/30 text-xs mt-4 leading-relaxed max-w-[200px]">
-                Wir melden uns innerhalb von 24 Stunden bei Ihnen.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Right — Form */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="lg:col-span-3 bg-navy-900 border border-navy-800 p-8 md:p-10"
+            transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h3 className="text-white font-semibold text-lg mb-8 flex items-center gap-3">
-              <div className="w-8 h-[2px] bg-gold-400" />
-              Anfrage senden
-            </h3>
-
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="text-white/40 text-xs font-medium tracking-wide uppercase mb-2.5 block">Name *</label>
-                  <input
-                    type="text"
-                    placeholder="Max Mustermann"
-                    className="w-full bg-navy-950 border border-navy-700 text-white px-4 py-3.5 text-sm placeholder:text-white/20 transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="text-white/40 text-xs font-medium tracking-wide uppercase mb-2.5 block">Unternehmen</label>
-                  <input
-                    type="text"
-                    placeholder="Firma GmbH"
-                    className="w-full bg-navy-950 border border-navy-700 text-white px-4 py-3.5 text-sm placeholder:text-white/20 transition-colors"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="text-white/40 text-xs font-medium tracking-wide uppercase mb-2.5 block">E-Mail *</label>
+            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid sm:grid-cols-2 gap-4">
                 <input
-                  type="email"
-                  placeholder="max@firma.de"
-                  className="w-full bg-navy-950 border border-navy-700 text-white px-4 py-3.5 text-sm placeholder:text-white/20 transition-colors"
+                  type="text"
+                  placeholder="Ihr Name *"
+                  className="w-full bg-white/[0.06] border border-white/[0.08] text-white px-5 py-4 text-[14px] rounded-xl placeholder:text-white/25 focus:border-gold-400/40 focus:bg-white/[0.08] transition-all duration-300"
+                />
+                <input
+                  type="text"
+                  placeholder="Unternehmen"
+                  className="w-full bg-white/[0.06] border border-white/[0.08] text-white px-5 py-4 text-[14px] rounded-xl placeholder:text-white/25 focus:border-gold-400/40 focus:bg-white/[0.08] transition-all duration-300"
                 />
               </div>
 
-              <div>
-                <label className="text-white/40 text-xs font-medium tracking-wide uppercase mb-2.5 block">Betreff</label>
-                <select
-                  className="w-full bg-navy-950 border border-navy-700 text-white px-4 py-3.5 text-sm transition-colors"
-                  defaultValue=""
-                >
-                  <option value="" disabled>Bitte wählen...</option>
-                  <option>Allgemeine Anfrage</option>
-                  <option>Partnerschaft</option>
-                  <option>Industrial Manufacturing</option>
-                  <option>Engineering Services</option>
-                  <option>Logistics & Supply Chain</option>
-                  <option>Digital Solutions</option>
-                  <option>Sustainable Energy</option>
-                </select>
-              </div>
+              <input
+                type="email"
+                placeholder="E-Mail Adresse *"
+                className="w-full bg-white/[0.06] border border-white/[0.08] text-white px-5 py-4 text-[14px] rounded-xl placeholder:text-white/25 focus:border-gold-400/40 focus:bg-white/[0.08] transition-all duration-300"
+              />
 
-              <div>
-                <label className="text-white/40 text-xs font-medium tracking-wide uppercase mb-2.5 block">Nachricht *</label>
-                <textarea
-                  rows={5}
-                  placeholder="Ihre Nachricht..."
-                  className="w-full bg-navy-950 border border-navy-700 text-white px-4 py-3.5 text-sm placeholder:text-white/20 transition-colors resize-none"
-                />
-              </div>
+              <select
+                className="w-full bg-white/[0.06] border border-white/[0.08] text-white/25 px-5 py-4 text-[14px] rounded-xl focus:border-gold-400/40 focus:bg-white/[0.08] transition-all duration-300 appearance-none"
+                defaultValue=""
+              >
+                <option value="" disabled>Betreff wählen...</option>
+                <option className="bg-navy-900 text-white">Allgemeine Anfrage</option>
+                <option className="bg-navy-900 text-white">Partnerschaft</option>
+                <option className="bg-navy-900 text-white">Industrial Manufacturing</option>
+                <option className="bg-navy-900 text-white">Engineering Services</option>
+                <option className="bg-navy-900 text-white">Logistics & Supply Chain</option>
+                <option className="bg-navy-900 text-white">Digital Solutions</option>
+                <option className="bg-navy-900 text-white">Sustainable Energy</option>
+              </select>
+
+              <textarea
+                rows={5}
+                placeholder="Ihre Nachricht..."
+                className="w-full bg-white/[0.06] border border-white/[0.08] text-white px-5 py-4 text-[14px] rounded-xl placeholder:text-white/25 focus:border-gold-400/40 focus:bg-white/[0.08] transition-all duration-300 resize-none"
+              />
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-gold-400 text-navy-950 font-bold text-sm tracking-[0.15em] uppercase px-6 py-4 hover:bg-gold-300 transition-all duration-300"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-gold-400 text-navy-950 text-[13px] font-semibold tracking-[0.06em] px-8 py-4 rounded-full hover:bg-gold-300 transition-colors duration-300"
               >
                 Nachricht senden
-                <ArrowRight size={16} />
+                <Send size={14} />
               </button>
+
+              <p className="text-white/20 text-[12px] pt-2">
+                Wir melden uns in der Regel innerhalb von 24 Stunden.
+              </p>
             </form>
           </motion.div>
         </div>
       </div>
-
-      {/* Bottom gold divider */}
-      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold-400/20 to-transparent" />
     </section>
   )
 }
 
-function ContactInfo({ icon: Icon, label, value }) {
+function ContactLine({ icon: Icon, value }) {
   return (
-    <div className="flex items-start gap-4 group">
-      <div className="flex-shrink-0 w-12 h-12 bg-navy-900 border border-navy-800 flex items-center justify-center group-hover:border-gold-400/40 transition-colors duration-300">
-        <Icon className="text-gold-400" size={18} />
-      </div>
-      <div>
-        <p className="text-white/35 text-[11px] font-medium tracking-[0.2em] uppercase mb-1">{label}</p>
-        <p className="text-white/80 text-sm font-medium">{value}</p>
-      </div>
+    <div className="flex items-center gap-4">
+      <Icon className="text-gold-400/60 flex-shrink-0" size={18} />
+      <span className="text-white/60 text-[14px]">{value}</span>
     </div>
   )
 }

@@ -2,43 +2,33 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-navy-950 pt-20 pb-8">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid md:grid-cols-12 gap-12 mb-16">
-          {/* Logo & Description */}
+    <footer className="bg-navy-950 border-t border-white/[0.06]">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
+
+        {/* Main footer content */}
+        <div className="py-16 lg:py-20 grid md:grid-cols-12 gap-12">
+          {/* Logo & tagline */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-5">
-              <img
-                src="./logo.png"
-                alt="APEX Industries Group"
-                className="h-10 w-auto"
-              />
-              <div>
-                <span className="text-white font-semibold text-lg tracking-wider block leading-tight">APEX</span>
-                <span className="text-gold-400 text-[10px] block tracking-[0.3em] uppercase leading-tight">Industries Group</span>
-              </div>
+              <img src="./logo.png" alt="APEX Industries Group" className="h-8 w-auto" />
+              <span className="text-white font-semibold text-[15px] tracking-wider">APEX</span>
             </div>
-            <p className="text-white/35 text-sm leading-relaxed max-w-sm">
-              Industrielle Unternehmensgruppe mit fünf spezialisierten Divisionen.
-              Kompetenz, Struktur und Vertrauen seit über 25 Jahren.
+            <p className="text-white/30 text-[13px] leading-[1.7] max-w-xs">
+              Industrielle Unternehmensgruppe mit fünf spezialisierten
+              Divisionen. Frankfurt am Main, Deutschland.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation */}
           <div className="md:col-span-3 md:col-start-7">
-            <h4 className="text-gold-400 text-[11px] font-semibold tracking-[0.2em] uppercase mb-5">Navigation</h4>
             <ul className="space-y-3">
               {[
-                { label: 'Startseite', href: '#hero' },
                 { label: 'Über uns', href: '#about' },
                 { label: 'Divisionen', href: '#divisions' },
                 { label: 'Kontakt', href: '#contact' },
               ].map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-white/35 text-sm hover:text-gold-400 transition-colors duration-300"
-                  >
+                  <a href={link.href} className="text-white/30 text-[13px] hover:text-white/60 transition-colors duration-300">
                     {link.label}
                   </a>
                 </li>
@@ -47,15 +37,11 @@ export default function Footer() {
           </div>
 
           {/* Legal */}
-          <div className="md:col-span-3">
-            <h4 className="text-gold-400 text-[11px] font-semibold tracking-[0.2em] uppercase mb-5">Rechtliches</h4>
+          <div className="md:col-span-2">
             <ul className="space-y-3">
-              {['Impressum', 'Datenschutz', 'AGB', 'Cookie-Einstellungen'].map((item) => (
+              {['Impressum', 'Datenschutz', 'AGB'].map((item) => (
                 <li key={item}>
-                  <a
-                    href="#"
-                    className="text-white/35 text-sm hover:text-gold-400 transition-colors duration-300"
-                  >
+                  <a href="#" className="text-white/30 text-[13px] hover:text-white/60 transition-colors duration-300">
                     {item}
                   </a>
                 </li>
@@ -64,13 +50,13 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs tracking-wide">
-            &copy; {currentYear} APEX Industries Group. Alle Rechte vorbehalten.
+        {/* Bottom line */}
+        <div className="border-t border-white/[0.06] py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-white/20 text-[11px]">
+            &copy; {currentYear} APEX Industries Group
           </p>
-          <p className="text-white/15 text-xs tracking-wide">
-            Design-Demo — Designkonzept
+          <p className="text-white/10 text-[11px]">
+            Designkonzept
           </p>
         </div>
       </div>

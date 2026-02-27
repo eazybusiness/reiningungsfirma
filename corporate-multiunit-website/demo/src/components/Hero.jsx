@@ -1,107 +1,83 @@
 import { motion } from 'framer-motion'
-import { ChevronDown, ArrowRight } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-end bg-navy-950 overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img
-          src="./hero.jpg"
-          alt=""
-          className="w-full h-full object-cover object-top"
-        />
-        {/* Reason: Multi-layer overlay for readability + brand color integration */}
-        <div className="absolute inset-0 bg-navy-950/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/80 via-transparent to-transparent" />
-      </div>
+    <section id="hero" className="relative bg-navy-950 overflow-hidden pt-[72px]">
+      {/* Reason: Two-part hero — text on top, image below with overlay blending into navy */}
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
 
-      {/* Content */}
-      <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24 pt-40">
-        <div className="max-w-3xl">
-          {/* Overline */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            className="flex items-center gap-4 mb-8"
-          >
-            <div className="w-16 h-[2px] bg-gold-400" />
-            <span className="text-gold-400 text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase">
-              Industrielle Unternehmensgruppe
-            </span>
-          </motion.div>
-
-          {/* Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.15 }}
-            className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white leading-[1.05] mb-8"
-          >
-            Kompetenz.
-            <br />
-            <span className="text-gold-400">Struktur.</span>
-            <br />
-            Vertrauen.
-          </motion.h1>
-
-          {/* Subheadline */}
+        {/* Text content — generous vertical space */}
+        <div className="pt-24 md:pt-32 lg:pt-40 pb-16 md:pb-20 lg:pb-24">
           <motion.p
-            initial={{ opacity: 0, y: 25 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.35 }}
-            className="text-white/70 text-lg md:text-xl leading-relaxed mb-12 max-w-xl"
+            transition={{ duration: 0.6 }}
+            className="text-gold-400 text-[13px] font-medium tracking-[0.2em] uppercase mb-8"
           >
-            Fünf spezialisierte Divisionen. Eine gemeinsame Vision.
-            Als integrierte Business Group vereinen wir industrielle Exzellenz
-            mit strategischer Weitsicht.
+            Industrielle Unternehmensgruppe
           </motion.p>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.55 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] text-white leading-[1.1] mb-8 max-w-4xl"
+          >
+            Wir verbinden industrielle Kompetenz mit{' '}
+            <span className="text-gold-400">strategischer Weitsicht.</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="text-white/50 text-lg md:text-xl leading-relaxed max-w-2xl mb-12"
+          >
+            Fünf spezialisierte Divisionen. Eine gemeinsame Vision. Als integrierte
+            Business Group schaffen wir nachhaltigen Mehrwert für Partner, Kunden
+            und Gesellschaft.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#divisions"
-              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-400 text-navy-950 font-bold text-sm tracking-[0.15em] uppercase hover:bg-gold-300 transition-all duration-300"
+              href="#about"
+              className="inline-flex items-center justify-center gap-3 px-8 py-3.5 bg-gold-400 text-navy-950 text-[13px] font-semibold tracking-[0.06em] rounded-full hover:bg-gold-300 transition-colors duration-300"
             >
-              Unsere Divisionen
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              Unternehmen kennenlernen
             </a>
             <a
-              href="#about"
-              className="inline-flex items-center justify-center px-8 py-4 border border-white/25 text-white font-medium text-sm tracking-[0.15em] uppercase hover:border-gold-400 hover:text-gold-400 transition-all duration-300 backdrop-blur-sm"
+              href="#divisions"
+              className="inline-flex items-center justify-center gap-3 px-8 py-3.5 text-white/60 text-[13px] font-medium tracking-[0.06em] hover:text-white transition-colors duration-300"
             >
-              Über die Gruppe
+              Unsere Divisionen
+              <ArrowDown size={14} className="opacity-40" />
             </a>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Hero image — centered, with overlay fade to navy */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2"
+        transition={{ duration: 1, delay: 0.3 }}
+        className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden"
       >
-        <motion.a
-          href="#about"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2.5 }}
-          className="block"
-        >
-          <ChevronDown className="text-gold-400/50" size={32} />
-        </motion.a>
+        <img
+          src="./hero.jpg"
+          alt="APEX Industries Group — Unser Team"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Reason: Top fade blends image into the text section above */}
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-transparent to-navy-950" />
+        <div className="absolute inset-0 bg-navy-950/30" />
       </motion.div>
-
-      {/* Bottom gold divider */}
-      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold-400/30 to-transparent" />
     </section>
   )
 }
