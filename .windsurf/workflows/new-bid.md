@@ -12,7 +12,7 @@ Read `.planning/PROFILE.md` for skills, positioning, and bid style rules.
 
 ### Step 2: Ask the user about the project
 
-Use `ask_user_question` for each question below. Do NOT skip questions — each answer shapes the bid.
+Use workflow /ask_user_questions for each question below. Do NOT skip questions — each answer shapes the bid.
 
 **Question 1 — Project type:**
 - Web / app development (full-stack, frontend, backend)

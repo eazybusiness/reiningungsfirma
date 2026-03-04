@@ -2,6 +2,24 @@
 
 ## Active Tasks
 
+### 🔄 powerbi-customer-analytics-dashboard
+**Added:** 2026-03-04
+**Status:** Bid prepared — ready to submit
+- [ ] Submit bid on Freelancer.com
+- [ ] Follow up if no response in 48h
+- [ ] [If won] Create delivery folder outside this workspace
+
+---
+
+### 🔄 whatsapp-ai-support-system
+**Added:** 2026-03-04
+**Status:** Bid package prepared — ready to submit
+- [ ] Submit bid on Freelancer.com
+- [ ] Follow up if no response in 48h
+- [ ] [If won] Create delivery folder outside this workspace
+
+---
+
 ### 🔄 Run first project scan via Freelancer.com API
 **Added:** 2026-03-04
 **Status:** Pending — use `/find-projects` workflow
