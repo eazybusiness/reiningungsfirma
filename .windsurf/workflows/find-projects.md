@@ -62,10 +62,15 @@ Key parameters:
 - AUD to USD: ×0.65
 - INR to USD: ×0.012 (exclude these)
 
+**Use browser-style filters to avoid INR projects:**
+- Skills: 156,594,245,149,17,3,9,500,2490,1829,13,22,31,37,95,180,335,502,518,619,620,930,1000,1094,1679,2719
+- Languages: en, de, es
+- Countries: BE, FI, NO, SE, DK, NL, ES, CH, AT, DE, US, GB, CA, AU, FR
+
 Run this command to search and filter:
 ```bash
 curl -H "freelancer-oauth-v1: $(grep FREELANCER_OAUTH_TOKEN .env | cut -d= -f2)" \
-  "https://www.freelancer.com/api/projects/0.1/projects/active?limit=50&full_description=true&job_details=true&query=German%20business%20OR%20Deutsch%20OR%20automation%20OR%20ERP%20OR%20CRM%20OR%20process%20optimization%20OR%20dashboard%20OR%20data%20analysis%20OR%20AI%20implementation&min_budget=500&sort_field=time_updated" \
+  "https://www.freelancer.com/api/projects/0.1/projects/active?limit=50&full_description=true&job_details=true&languages[]=en&languages[]=de&languages[]=es&countries[]=BE&countries[]=FI&countries[]=NO&countries[]=SE&countries[]=DK&countries[]=NL&countries[]=ES&countries[]=CH&countries[]=AT&countries[]=DE&countries[]=US&countries[]=GB&countries[]=CA&countries[]=AU&countries[]=FR&jobs[]=156&jobs[]=594&jobs[]=245&jobs[]=149&jobs[]=17&jobs[]=3&jobs[]=9&jobs[]=500&jobs[]=2490&jobs[]=1829&jobs[]=13&jobs[]=22&jobs[]=31&jobs[]=37&jobs[]=95&jobs[]=180&jobs[]=335&jobs[]=502&jobs[]=518&jobs[]=619&jobs[]=620&jobs[]=930&jobs[]=1000&jobs[]=1094&jobs[]=1679&jobs[]=2719&min_budget=500&project_types[]=fixed&project_types[]=hourly&sort_field=time_updated" \
   | python3 -c "
 import json, sys
 data = json.load(sys.stdin)
