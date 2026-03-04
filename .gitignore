@@ -23,6 +23,18 @@ dist-ssr
 *.sln
 *.sw?
 
+# Environment files (contain secrets)
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # Database dumps (may contain secrets)
 dump.sql
 odoo-migration-project/odoo_backup/

@@ -1,28 +1,69 @@
-# Reinigungsfirma Website Demo
+# Freelance Bid Workspace
 
-Modern, professional cleaning company website demonstrating design and performance optimization capabilities.
+A structured workspace for finding, bidding on, and winning freelance projects on [Freelancer.com](https://www.freelancer.com).
 
-**Live Demo:** https://eazybusiness.github.io/Reinigungsfirma-Website/
+Each project bid lives in its own subfolder with its own bid text, planning document, and demo — shareable via GitHub link directly in the bid.
 
-## Features
+## How to Use
 
-- ✨ Modern, clean design with professional aesthetics
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ⚡ Fast load times with optimized performance
-- 🎨 Smooth animations with Framer Motion
-- 📝 Contact form with validation
-- 🔍 SEO-ready structure
-- 🇩🇪 German language content
-- 📄 Legal pages (Impressum, Datenschutz)
+### Start every session
 
-## Tech Stack
+Run the `/init` workflow to restore context and pick up where you left off.
 
-- **Framework:** React 19
-- **Build Tool:** Vite 7
-- **Styling:** TailwindCSS 4
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Routing:** React Router DOM (Hash-based for GitHub Pages)
-## Expanding the ESLint configuration
+### Find new projects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Run `/find-projects` to search Freelancer.com via API, score projects against your profile, and get ranked recommendations.
+
+### Create a bid
+
+Run `/new-bid` to walk through a structured process:
+1. Answer a few questions about the project
+2. Get a 500–700 char winning bid text generated
+3. Get a PLANNING.md + demo/strategic document created
+4. Everything organized in its own subfolder with a git repo
+
+## Workspace Structure
+
+```
+.planning/               ← GSD planning system (read at every session start)
+  PROJECT.md             ← workspace identity + Nils's full context
+  STATE.md               ← session continuity tracker
+  REQUIREMENTS.md        ← scope, constraints, in/out of scope
+  ROADMAP.md             ← phased milestones Q1–Q4 2026
+  PROFILE.md             ← full skills, interests, positioning (used by workflows)
+
+.windsurf/workflows/
+  init.md                ← /init workflow
+  find-projects.md       ← /find-projects workflow
+  new-bid.md             ← /new-bid workflow
+
+project-name/            ← one folder per bid
+  BID.md                 ← bid text (paste into Freelancer.com)
+  PLANNING.md            ← milestone plan + deliverables
+  DEMO.md                ← proof asset / strategic document
+  README.md              ← shareable via GitHub link
+
+PLANNING.md              ← this workspace's planning overview
+TASK.md                  ← active bids and pending items
+.env                     ← FREELANCER_OAUTH_TOKEN (never committed)
+```
+
+## Profile
+
+**Nils Peters** — Business Automation Advisor + Full Stack Developer
+- 20+ years C-level experience (tech, e-commerce, industrial)
+- Trilingual: German / English / Spanish
+- Based in Bolivia, serving DACH clients remotely
+- Website: [me.hiplus.de](https://me.hiplus.de)
+
+## Related Projects
+
+| Project | Purpose |
+|---------|---------|
+| `../freelance_api/` | Full automated pipeline with scoring + dashboard |
+| `../freelance_brainstorming/` | Business strategy, positioning, LinkedIn |
+| `../freelancer_scraper/` | Legacy scraper (pre-API) |
+
+## Demo Projects
+
+Demos linked in bids are deployed to GitHub Pages under [github.com/eazybusiness](https://github.com/eazybusiness).
