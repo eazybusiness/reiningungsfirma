@@ -95,9 +95,13 @@ for p in projects:
     if not p.get('title') or not p.get('preview_description'):
         continue
     
-    # Skip INR currency
+    # Skip INR currency (currency_id 3 = INR)
     budget = p.get('budget', {})
     if budget and budget.get('currency_id') == 3:  # INR
+        continue
+    
+    # Also check if budget values are too low (likely INR)
+    if budget and budget.get('minimum', 0) < 200:
         continue
     
     valid_projects.append(p)
@@ -108,7 +112,23 @@ for p in projects:
 
 print(f'Found {len(valid_projects)} valid projects (filtered from {len(projects)} total)')
 for p in valid_projects:
-    print(json.dumps(p, indent=2))
+    budget = p.get('budget', {})
+    budget_min = budget.get('minimum', 0) if budget else 0
+    budget_max = budget.get('maximum', 0) if budget else 0
+    currency_id = budget.get('currency_id', 1) if budget else 1  # Default to USD (1)
+    currency_map = {1: 'USD', 2: 'EUR', 3: 'INR', 4: 'GBP', 5: 'AUD', 6: 'CAD'}
+    currency = currency_map.get(currency_id, 'USD')
+    
+    project_id = p.get('seo_url', f'projects/{p.get(\"id\", \"unknown\")}')
+    url = f'https://www.freelancer.com/projects/{project_id}'
+    
+    print(f'\nTitle: {p[\"title\"]}')
+    print(f'URL: {url}')
+    print(f'Budget: {currency} {budget_min:.0f}-{budget_max:.0f}')
+    print(f'Bids: {p.get(\"bid_stats\", {}).get(\"bid_count\", 0)}')
+    print(f'Language: {p.get(\"language\", \"unknown\")}')
+    print(f'Preview: {p.get(\"preview_description\", \"\")[:150]}...')
+    print('---')
 "
 ```
 
