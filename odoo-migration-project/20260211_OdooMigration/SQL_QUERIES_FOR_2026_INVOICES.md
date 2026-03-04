@@ -1,6 +1,6 @@
 # SQL Queries to Extract 2026 Invoices
 
-## 📋 Instructions for Your Friend
+## 📋 Instructions 
 
 These SQL queries will extract all 2026 invoice data from the PostgreSQL backup, including headers, lines, and notes.
 
@@ -202,7 +202,7 @@ COPY (
 
 ## 🚀 Quick Start Script
 
-Your friend can create a shell script to run all queries at once:
+You can create a shell script to run all queries at once:
 
 **File: `extract_2026_invoices.sh`**
 
@@ -353,7 +353,7 @@ chmod +x extract_2026_invoices.sh
 
 ## 📊 Expected Output
 
-After running the queries, your friend will have these CSV files:
+After running the queries, you will have these CSV files:
 
 1. **customer_invoices_2026.csv** - Invoice headers
 2. **invoice_lines_2026.csv** - Product/service lines
@@ -389,7 +389,7 @@ LIMIT 100  -- Test with 100 records first
 
 ## 🔍 Verification Queries
 
-Before extracting, your friend can check the data:
+Before extracting, you can check the data:
 
 **Count 2026 invoices:**
 ```sql
@@ -424,7 +424,7 @@ WHERE am.move_type = 'out_invoice'
 
 ## 📞 Support
 
-If your friend encounters any issues:
+If you encounter any issues:
 1. Check PostgreSQL logs: `tail -f /var/log/postgresql/postgresql-*.log`
 2. Verify database connection: `psql -d odoo_backup_2026 -c "SELECT version();"`
 3. Check file permissions: `ls -la /tmp/`
