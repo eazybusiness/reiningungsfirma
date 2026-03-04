@@ -6,67 +6,131 @@ description: Search Freelancer.com for new projects, score them against your pro
 
 Use this workflow to discover new projects on Freelancer.com that match your skills and interests.
 
+## Look out for
+
+Be aware of the currency. use aproximate exchange rates to calculate the usd value.
+Exclude offers from India or in INR.
+Look for projects with less bids prefererably.
+Distingues between hourly rates and fixed budgets.
+
 ### Step 1: Load profile context
 
 Read `.planning/PROFILE.md` to load skills, interests, project preferences, and bid criteria.
 
-### Step 2: Ask the user what to search for
+### Step 2: Ask the user what to search for (optional)
 
-Ask the user these questions (use ask_user_question for each):
+**Default preferences (skip questions unless user wants to override):**
+- Primary focus: German/DACH business projects (automation, ERP, CRM, process optimization)
+- Secondary focus: AI-assisted IT projects (web apps, dashboards, data analysis)
+- Min budget: €500 / $500 (only show €200+ if nothing else available or <1 hour work)
+- Prefer: European clients over international
+- Show: 10 valid projects
 
-**Question 1 — Search focus:**
-- DACH/German market (German-language projects)
-- Full-stack / web development (international)
-- Business automation / AI / process consulting
-- Copywriting / ghostwriting / content
-- Let me specify keywords manually
+**Only ask if user wants to override defaults:**
+Use workflow `/ask_user_questions` to ask:
+- "Search for specific keywords or use default (German business + AI-assisted IT)?"
+- "Different budget filter than €500+ minimum?"
 
-**Question 2 — Budget filter:**
-- Any budget (show all)
-- Min €200 / $200 only
-- Min €500 / $500 only
-- Min €1,000 / $1,000 only
-
-**Question 3 — How many projects to review:**
-- Show top 5 (quick scan)
-- Show top 10 (thorough review)
-- Show top 20 (full batch)
-
-### Step 3: Call the Freelancer.com API
+### Step 3: Call the Freelancer.com API and filter results
 
 Use the `FREELANCER_OAUTH_TOKEN` from `.env` to call the Freelancer.com API.
 
 **Endpoint:** `GET https://www.freelancer.com/api/projects/0.1/projects/active`
 
-Key parameters to include:
-- `query`: search term from user's selection
-- `min_budget`: from user's budget filter
+**Important:** Request 50+ projects to ensure we get 10 valid ones after filtering.
+
+Key parameters:
+- `query`: Based on defaults or user override
+- `min_budget`: 500 (USD)
 - `full_description`: true
 - `job_details`: true
-- `limit`: user's count selection
+- `limit`: 50 (to account for filtering)
 - `sort_field`: time_updated
 
-Run this command to search:
+**Filter out these projects:**
+1. **Deleted projects** — `deleted: true`
+2. **Closed projects** — `frontend_project_status != "open"`
+3. **Preferred freelancer only** — `upgrades.pf_only: true`
+4. **Indian projects** — `location.country.code == "IN"` or currency is INR
+5. **Already bid on** — check if user already placed a bid (requires checking bid history)
+6. **Budget too low** — under €200/$200 (unless nothing else available)
+7. **Non-existent/invalid** — missing critical fields (title, description, budget)
+
+**Currency conversion (approximate):**
+- EUR to USD: ×1.1
+- GBP to USD: ×1.3
+- AUD to USD: ×0.65
+- INR to USD: ×0.012 (exclude these)
+
+Run this command to search and filter:
 ```bash
 curl -H "freelancer-oauth-v1: $(grep FREELANCER_OAUTH_TOKEN .env | cut -d= -f2)" \
-  "https://www.freelancer.com/api/projects/0.1/projects/active?limit=20&full_description=true&job_details=true&query=YOUR_QUERY" \
-  | python3 -m json.tool
+  "https://www.freelancer.com/api/projects/0.1/projects/active?limit=50&full_description=true&job_details=true&query=German%20business%20OR%20Deutsch%20OR%20automation%20OR%20ERP%20OR%20CRM%20OR%20process%20optimization%20OR%20dashboard%20OR%20data%20analysis%20OR%20AI%20implementation&min_budget=500&sort_field=time_updated" \
+  | python3 -c "
+import json, sys
+data = json.load(sys.stdin)
+projects = data.get('result', {}).get('projects', [])
+
+# Filter valid projects
+valid_projects = []
+for p in projects:
+    # Skip deleted
+    if p.get('deleted', False):
+        continue
+    
+    # Skip closed
+    if p.get('frontend_project_status') != 'open':
+        continue
+    
+    # Skip preferred freelancer only
+    if p.get('upgrades', {}).get('pf_only', False):
+        continue
+    
+    # Skip Indian projects
+    country_code = p.get('location', {}).get('country', {}).get('code')
+    if country_code == 'IN':
+        continue
+    
+    # Skip if missing critical fields
+    if not p.get('title') or not p.get('preview_description'):
+        continue
+    
+    # Skip INR currency
+    budget = p.get('budget', {})
+    if budget and budget.get('currency_id') == 3:  # INR
+        continue
+    
+    valid_projects.append(p)
+    
+    # Stop when we have 10 valid projects
+    if len(valid_projects) >= 10:
+        break
+
+print(f'Found {len(valid_projects)} valid projects (filtered from {len(projects)} total)')
+for p in valid_projects:
+    print(json.dumps(p, indent=2))
+"
 ```
 
 ### Step 4: Score and rank the projects
 
-For each project returned, score it on these dimensions (1–5 each):
+For each valid project, score it on these dimensions (1–5 each):
 
 | Dimension | What to check |
 |-----------|--------------|
-| **Skill match** | How well does it match PROFILE.md skills? |
-| **Budget** | Is the budget realistic for the scope? |
-| **Competition** | How many bids already? (<10 bids = green, >30 = red) |
-| **Client quality** | Does client have reviews? Verified payment? |
-| **Differentiation** | Can we offer a demo or unique angle? |
-| **Win probability** | DACH client? German language? Good brief? |
+| **Skill match** | How well does it match PROFILE.md skills? Business automation/ERP/CRM = 5, AI-assisted IT = 4, general dev = 3 |
+| **Budget** | Is the budget realistic? €1000+ = 5, €500-999 = 4, €200-499 = 2. Note if hourly or fixed. |
+| **Competition** | How many bids already? <10 bids = 5, 10-20 = 4, 21-30 = 3, >30 = 1 |
+| **Client quality** | Does client have reviews? Verified payment? Payment verified + reviews = 5 |
+| **Language/Location** | German language = 5, European client = 4, English international = 3, other = 1 |
+| **Win probability** | DACH client + good brief + can offer demo = 5, good brief = 3, unclear brief = 1 |
 
 **Total score = sum of dimensions (max 30)**
+
+**Priority order:**
+1. German business projects (automation, ERP, CRM, process optimization)
+2. European AI-assisted IT projects (dashboards, data analysis, web apps)
+3. International high-value projects (only if €1000+)
 
 ### Step 5: Present recommendations
 
