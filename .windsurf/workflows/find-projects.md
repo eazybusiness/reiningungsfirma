@@ -67,73 +67,130 @@ Key parameters:
 - Languages: en, de, es
 - Countries: BE, FI, NO, SE, DK, NL, ES, CH, AT, DE, US, GB, CA, AU, FR
 
+**Correct API parameters from official SDK:**
+- `project_types[]`: fixed, hourly
+- `countries[]`: BE, FI, NO, SE, DK, NL, ES, CH, AT, DE, US, GB, CA, AU, FR
+- `languages[]`: en, de, es
+- `jobs[]`: skill IDs (156,594,245,149,17,3,9,500,2490,1829,13,22,31,37,95,180,335,502,518,619,620,930,1000,1094,1679,2719)
+- `min_avg_price`: minimum average price for fixed projects
+- `min_avg_hourly_rate`: minimum hourly rate
+- `sort_field`: time_updated
+
 Run this command to search and filter:
 ```bash
 curl -H "freelancer-oauth-v1: $(grep FREELANCER_OAUTH_TOKEN .env | cut -d= -f2)" \
-  "https://www.freelancer.com/api/projects/0.1/projects/active?limit=50&full_description=true&job_details=true&languages[]=en&languages[]=de&languages[]=es&countries[]=BE&countries[]=FI&countries[]=NO&countries[]=SE&countries[]=DK&countries[]=NL&countries[]=ES&countries[]=CH&countries[]=AT&countries[]=DE&countries[]=US&countries[]=GB&countries[]=CA&countries[]=AU&countries[]=FR&jobs[]=156&jobs[]=594&jobs[]=245&jobs[]=149&jobs[]=17&jobs[]=3&jobs[]=9&jobs[]=500&jobs[]=2490&jobs[]=1829&jobs[]=13&jobs[]=22&jobs[]=31&jobs[]=37&jobs[]=95&jobs[]=180&jobs[]=335&jobs[]=502&jobs[]=518&jobs[]=619&jobs[]=620&jobs[]=930&jobs[]=1000&jobs[]=1094&jobs[]=1679&jobs[]=2719&min_budget=500&project_types[]=fixed&project_types[]=hourly&sort_field=time_updated" \
+  "https://www.freelancer.com/api/projects/0.1/projects/active?limit=50&full_description=true&job_details=true&project_types[]=fixed&project_types[]=hourly&countries[]=BE&countries[]=FI&countries[]=NO&countries[]=SE&countries[]=DK&countries[]=NL&countries[]=ES&countries[]=CH&countries[]=AT&countries[]=DE&countries[]=US&countries[]=GB&countries[]=CA&countries[]=AU&countries[]=FR&languages[]=en&languages[]=de&languages[]=es&jobs[]=156&jobs[]=594&jobs[]=245&jobs[]=149&jobs[]=17&jobs[]=3&jobs[]=9&jobs[]=500&jobs[]=2490&jobs[]=1829&jobs[]=13&jobs[]=22&jobs[]=31&jobs[]=37&jobs[]=95&jobs[]=180&jobs[]=335&jobs[]=502&jobs[]=518&jobs[]=619&jobs[]=620&jobs[]=930&jobs[]=1000&jobs[]=1094&jobs[]=1679&jobs[]=2719&min_avg_price=500&min_avg_hourly_rate=20&sort_field=time_updated" \
   | python3 -c "
 import json, sys
 data = json.load(sys.stdin)
 projects = data.get('result', {}).get('projects', [])
 
+print(f'Total projects from API: {len(projects)}')
+
 # Filter valid projects
 valid_projects = []
 for p in projects:
-    # Skip deleted
-    if p.get('deleted', False):
+    # Skip deleted/closed
+    if p.get('deleted', False) or p.get('frontend_project_status') != 'open':
         continue
-    
-    # Skip closed
-    if p.get('frontend_project_status') != 'open':
-        continue
-    
-    # Skip preferred freelancer only
     if p.get('upgrades', {}).get('pf_only', False):
         continue
     
-    # Skip Indian projects
-    country_code = p.get('location', {}).get('country', {}).get('code')
-    if country_code == 'IN':
-        continue
-    
-    # Skip if missing critical fields
+    # Must have title and description
     if not p.get('title') or not p.get('preview_description'):
         continue
     
-    # Skip INR currency (currency_id 3 = INR)
-    budget = p.get('budget', {})
-    if budget and budget.get('currency_id') == 3:  # INR
+    # Skip medical/design
+    title_lower = p.get('title', '').lower()
+    desc_lower = p.get('preview_description', '').lower()
+    if any(kw in title_lower or kw in desc_lower for kw in ['medical', 'hospital', 'healthcare', 'clinical', 'patient', 'logo', 'graphic', 'illustration', 'vector', 'cartoon']):
         continue
     
-    # Also check if budget values are too low (likely INR)
-    if budget and budget.get('minimum', 0) < 200:
+    # Budget checks
+    budget = p.get('budget', {})
+    project_type = p.get('type', 'fixed')
+    budget_min = budget.get('minimum', 0) if budget else 0
+    
+    # Skip suspiciously low budgets (likely INR)
+    if project_type == 'fixed' and budget_min < 500:
+        continue
+    if project_type == 'hourly' and budget_min < 20:
+        continue
+    
+    # Skip if currency is INR
+    if budget and budget.get('currency_id') == 3:
+        continue
+    
+    # Only include if country is actually set (not None)
+    country_code = p.get('location', {}).get('country', {}).get('code')
+    if not country_code:
+        continue
+    
+    # Only first-world countries
+    if country_code not in ['US', 'GB', 'CA', 'AU', 'DE', 'AT', 'CH', 'FR', 'NL', 'BE', 'SE', 'NO', 'DK', 'FI', 'ES']:
         continue
     
     valid_projects.append(p)
-    
-    # Stop when we have 10 valid projects
-    if len(valid_projects) >= 10:
-        break
 
-print(f'Found {len(valid_projects)} valid projects (filtered from {len(projects)} total)')
-for p in valid_projects:
+print(f'Valid projects after filtering: {len(valid_projects)}')
+
+# If no valid projects with strict country filter, relax it
+if len(valid_projects) == 0:
+    print('No projects with valid country codes found. Relaxed filtering...')
+    valid_projects = []
+    for p in projects:
+        # Basic filters only
+        if p.get('deleted', False) or p.get('frontend_project_status') != 'open':
+            continue
+        if p.get('upgrades', {}).get('pf_only', False):
+            continue
+        if not p.get('title') or not p.get('preview_description'):
+            continue
+        
+        # Skip medical/design
+        title_lower = p.get('title', '').lower()
+        desc_lower = p.get('preview_description', '').lower()
+        if any(kw in title_lower or kw in desc_lower for kw in ['medical', 'hospital', 'healthcare', 'clinical', 'patient', 'logo', 'graphic', 'illustration', 'vector', 'cartoon']):
+            continue
+        
+        # Budget checks (higher threshold to avoid INR)
+        budget = p.get('budget', {})
+        project_type = p.get('type', 'fixed')
+        budget_min = budget.get('minimum', 0) if budget else 0
+        
+        if project_type == 'fixed' and budget_min < 1000:  # Higher threshold
+            continue
+        if project_type == 'hourly' and budget_min < 30:
+            continue
+        
+        valid_projects.append(p)
+
+# Show top 10
+for i, p in enumerate(valid_projects[:10], 1):
     budget = p.get('budget', {})
     budget_min = budget.get('minimum', 0) if budget else 0
     budget_max = budget.get('maximum', 0) if budget else 0
-    currency_id = budget.get('currency_id', 1) if budget else 1  # Default to USD (1)
+    currency_id = budget.get('currency_id', 1) if budget else 1
     currency_map = {1: 'USD', 2: 'EUR', 3: 'INR', 4: 'GBP', 5: 'AUD', 6: 'CAD'}
     currency = currency_map.get(currency_id, 'USD')
     
-    project_id = p.get('seo_url', f'projects/{p.get(\"id\", \"unknown\")}')
+    project_type = p.get('type', 'fixed')
+    bid_count = p.get('bid_stats', {}).get('bid_count', 0)
+    country_code = p.get('location', {}).get('country', {}).get('code', '?')
+    language = p.get('language', 'unknown')
+    
+    project_id = p.get('seo_url', f\"projects/{p.get('id', 'unknown')}\")
     url = f'https://www.freelancer.com/projects/{project_id}'
     
-    print(f'\nTitle: {p[\"title\"]}')
-    print(f'URL: {url}')
-    print(f'Budget: {currency} {budget_min:.0f}-{budget_max:.0f}')
-    print(f'Bids: {p.get(\"bid_stats\", {}).get(\"bid_count\", 0)}')
-    print(f'Language: {p.get(\"language\", \"unknown\")}')
-    print(f'Preview: {p.get(\"preview_description\", \"\")[:150]}...')
-    print('---')
+    print(f'{i}. {p[\"title\"]}')
+    print(f'   Type: {project_type.upper()} | Country: {country_code} | Language: {language}')
+    if project_type == 'hourly':
+        print(f'   Rate: {currency} {budget_min}-{budget_max}/hour | Bids: {bid_count}')
+    else:
+        print(f'   Budget: {currency} {budget_min}-{budget_max} | Bids: {bid_count}')
+    print(f'   URL: {url}')
+    print(f'   Preview: {p.get(\"preview_description\", \"\")[:120]}...')
+    print()
 "
 ```
 
