@@ -2,6 +2,15 @@
 
 ## Active Tasks
 
+### 🔄 hubspot-clientify-crm-migration
+**Added:** 2026-03-05
+**Status:** Bid package prepared — ready to submit
+- [ ] Submit bid on Freelancer.com
+- [ ] Follow up if no response in 48h
+- [ ] [If won] Create delivery folder outside this workspace
+
+---
+
 ### 🔄 medieval-world-magazine-article
 **Added:** 2026-03-05
 **Status:** Bid prepared — demo live at https://eazybusiness.github.io/medieval-world-magazine-article/
