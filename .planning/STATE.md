@@ -3,23 +3,25 @@
 > **Purpose:** Prevents context rot between sessions. Read this file at the start of every new conversation.
 
 ## Last Updated
-- **Date:** 2026-03-04
-- **Session:** Full workspace restructure — GSD planning system, workflows, profile, cleanup
+- **Date:** 2026-03-05
+- **Session:** Created medieval-world-magazine-article bid with live GitHub Pages demo
 
 ## Current Phase
 - **Active Milestone:** Phase 1 — System Setup (workflows + profile in place, bid pipeline operational)
-- **Status:** Planning structure created; workflows ready; first API-driven bid search pending
+- **Status:** Planning structure created; workflows ready; multiple bids created
 
-## What Was Done This Session (2026-03-04)
-- Scraped me.hiplus.de for full profile and skills inventory
-- Imported full LinkedIn profile from `freelance_brainstorming/.planning/linkedin_copy_paste.md`
-- Moved all loose root-level bid files into own subfolders
-- Created `.planning/` GSD structure (PROJECT.md, STATE.md, REQUIREMENTS.md, ROADMAP.md, PROFILE.md)
-- Created PLANNING.md at workspace root
-- Created 3 Windsurf workflows: `init`, `find-projects`, `new-bid`
-- Updated `.gitignore` to include `.env`
-- Rewrote `README.md` to reflect actual workspace purpose
-- Updated `TASK.md`
+## What Was Done This Session (2026-03-05)
+- Created complete bid package for medieval-world-magazine-article:
+  - Researched Middle Ages outside Western Europe (Islamic Golden Age, Mali Empire, Song Dynasty, Khmer Empire, Great Zimbabwe)
+  - Fact-checked all claims against peer-reviewed sources (Pormann, Levtzion & Hopkins, Evans et al.)
+  - Wrote magazine-style demo excerpt (~600 words) covering Baghdad's bimaristans and Mansa Musa's 1324 pilgrimage
+  - Built beautiful HTML demo page with pull quotes, sidebar suggestions, image suggestions, bibliography
+  - Deployed to GitHub Pages: https://eazybusiness.github.io/medieval-world-magazine-article/
+  - BID.md with 588-char English bid text including demo link
+  - PLANNING.md with regional coverage plan and milestone schedule
+  - README.md for GitHub sharing
+- Git committed and pushed medieval-world-magazine-article subfolder
+- Updated TASK.md with new bid entry
 
 ## Current Business Snapshot
 - **Date reference:** 2026-03-04
