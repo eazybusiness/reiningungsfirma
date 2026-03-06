@@ -3,8 +3,8 @@
 > **Purpose:** Prevents context rot between sessions. Read this file at the start of every new conversation.
 
 ## Last Updated
-- **Date:** 2026-03-05
-- **Session:** Created medieval-world-magazine-article bid with live GitHub Pages demo
+- **Date:** 2026-03-06
+- **Session:** Created figma-members-portal-admin bid package (5-day full-stack portal + admin) and committed it
 
 ## Current Phase
 - **Active Milestone:** Phase 1 — System Setup (workflows + profile in place, bid pipeline operational)
@@ -21,6 +21,15 @@
   - PLANNING.md with regional coverage plan and milestone schedule
   - README.md for GitHub sharing
 - Git committed and pushed medieval-world-magazine-article subfolder
+- Updated TASK.md with new bid entry
+
+## What Was Done This Session (2026-03-06)
+- Created complete bid package for figma-members-portal-admin:
+  - German formal BID.md (500–700 chars) with GitHub link
+  - PLANNING.md with 5-day delivery plan and scope guardrails
+  - DEMO.md with architecture and risk controls
+  - README.md + subfolder TASK.md
+- Git committed figma-members-portal-admin subfolder
 - Updated TASK.md with new bid entry
 
 ## Current Business Snapshot
