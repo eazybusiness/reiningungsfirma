@@ -2,7 +2,7 @@
 
 ## Bid text (paste into Freelancer.com)
 
-Sie haben Figma-Layouts (DE/EN) und brauchen die saubere Umsetzung inkl. Login, Mitgliederverwaltung, User-Dashboard (Statistiken) sowie einen schlanken Admin für Nutzer-/Mitgliedschaften und Auswertungen (Tag/Woche/Monat/Jahr). Ich liefere das als strukturierte Full‑Stack-Webapp (responsive) mit sauberer Codebasis, Rollen/Rechte, Admin-UI und kurzer Einweisung inkl. Deployment. 5 Tage sind realistisch mit klar definiertem Scope und täglichem Review. Details: github.com/eazybusiness/figma-members-portal-admin
+Sie haben Figma-Layouts (DE/EN) und wollen in 5 Tagen ein funktionsfähiges Portal. Ich setze das als saubere Full‑Stack‑Webapp um: Figma→komponentisiertes Frontend (responsive), Backend mit RBAC (User/Admin), Mitglieder- & Mitgliedschaftslogik, Statistik-Events + Aggregationen (Tag/Woche/Monat/Jahr) und schlanker Admin zum Bearbeiten/Verwalten. Täglicher Review-Link, klare Abnahmekriterien, Übergabe mit kurzer Einweisung. 20+ Jahre Umsetzung von E‑Commerce/CRM/Automatisierung. Details: github.com/eazybusiness/figma-members-portal-admin
 
 ## Bid notes (internal)
 

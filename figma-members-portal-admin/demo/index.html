@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Figma Members Portal – Delivery Plan</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: #121b2f;
+        --text: #e6e8ee;
+        --muted: #aab3c5;
+        --accent: #5eead4;
+        --danger: #fb7185;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        background: radial-gradient(1200px 600px at 20% 0%, rgba(94,234,212,0.10), transparent 70%),
+          radial-gradient(900px 500px at 90% 30%, rgba(59,130,246,0.12), transparent 65%),
+          var(--bg);
+        color: var(--text);
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 56px; }
+      header {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+      .title h1 { margin: 0; font-size: 22px; letter-spacing: 0.2px; }
+      .title p { margin: 8px 0 0; color: var(--muted); line-height: 1.5; }
+      .badge {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 10px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.04);
+        border-radius: 12px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+      @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+      .card {
+        border: 1px solid var(--border);
+        background: rgba(18,27,47,0.75);
+        backdrop-filter: blur(6px);
+        border-radius: 14px;
+        padding: 14px 14px;
+      }
+      .card h2 { margin: 0 0 10px; font-size: 16px; }
+      .card p { margin: 0; color: var(--muted); line-height: 1.55; }
+      ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+      li { margin: 6px 0; }
+      .kpi { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+      .kpi .item {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px;
+        background: rgba(255,255,255,0.03);
+      }
+      .kpi .label { color: var(--muted); font-size: 12px; }
+      .kpi .value { margin-top: 6px; font-size: 13px; color: var(--text); }
+      .footer {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 13px;
+        border-top: 1px solid var(--border);
+        padding-top: 14px;
+      }
+      .warn { color: #ffd6a5; }
+      .ok { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="title">
+          <h1>Figma Members Portal + Admin – Umsetzung in 5 Tagen</h1>
+          <p>
+            Diese Seite ist eine <strong>Preview/Plan</strong>-Ansicht für den Bid.
+            Sie zeigt Vorgehen, Scope-Guardrails und Lieferumfang (Portal + Admin + Reporting).
+          </p>
+        </div>
+        <div class="badge">
+          <span class="ok">●</span>
+          <span>Deliverable: Plan + Demo-Preview</span>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Öffentliches Portal</h2>
+          <p>Figma-getreue responsive Umsetzung (Desktop/Tablet/Mobile) inkl. Auth & Member-Dashboard.</p>
+          <ul>
+            <li>Registrierung/Login/Logout + Passwort-Reset</li>
+            <li>Mitgliederverwaltung (Profil, Status, Basisdaten)</li>
+            <li>Dashboard für eingeloggte Nutzer (Statistiken)</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Admin-Bereich (schlank, erweiterbar)</h2>
+          <p>Rollen & Rechte (RBAC) und wartbare Admin-UI.</p>
+          <ul>
+            <li>Nutzer bearbeiten (Rolle, Status, Stammdaten)</li>
+            <li>Mitgliedschaften verwalten (Anmeldung, paid-Status, Laufzeit)</li>
+            <li>Auswertungen: Tag/Woche/Monat/Jahr</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>5‑Tage Plan (kurz)</h2>
+          <ul>
+            <li><strong>Tag 1:</strong> Setup, Figma→Layout, Auth-Grundgerüst</li>
+            <li><strong>Tag 2:</strong> Mitgliederbereich + API + Validierung</li>
+            <li><strong>Tag 3:</strong> Admin (Users/Memberships) + RBAC</li>
+            <li><strong>Tag 4:</strong> Stats Events + Aggregationen + Reports</li>
+            <li><strong>Tag 5:</strong> QA/Responsive Polish + Handover</li>
+          </ul>
+          <div class="kpi">
+            <div class="item">
+              <div class="label">Arbeitsmodus</div>
+              <div class="value">Täglicher Review-Link + Abnahmekriterien</div>
+            </div>
+            <div class="item">
+              <div class="label">Qualität</div>
+              <div class="value">RBAC, saubere Struktur, erweiterbar</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Scope-Guardrails (damit 5 Tage halten)</h2>
+          <p class="warn">Zahlungsanbieter-Integration nur, wenn Provider/Flow klar ist (sonst Phase 2).</p>
+          <ul>
+            <li>Stats werden zu Beginn als KPI-Liste fixiert</li>
+            <li>Figma-Export wird refaktoriert (Komponenten), nicht 1:1 „zusammenkopiert“</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer">
+        <div>
+          Repo-Ordner: <code>figma-members-portal-admin/</code>
+        </div>
+        <div style="margin-top: 6px;">
+          Hinweis: GitHub Pages wird erst online, sobald das Repo auf GitHub existiert und gepusht wurde.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
